@@ -17,12 +17,14 @@
             </div>
             <nav class="">
                 <div class="main flax-between flax-centr">
-                    <div>
-                        <ul class="main flax-between flax-centr">
+                    <div class="dark-bgc"></div>
+                    <div class="menubug">
+                        <ul class="menu">
                             <li><a class="swap" href="index.html">Home</a></li>
                             <li><a class="swap" href="aboutus.html">About us</a></li>
                             <li><a class="swap" href="#">Contact</a></li>
                             <li><a class="swap" href="blog.html">Blog</a></li>
+                            <li class="cancel">x</li>
                         </ul>
                     </div>
                     <div class="sociall">
@@ -35,6 +37,11 @@
                     </div>
                 </div>
             </nav>
+            <div class="burger">
+                <span class="br1"></span>
+                <span class="br2"></span>
+                <span class="br3"></span>
+            </div>
         </div>
         <div class="main-catalog">
             <ul class="main-catalog flax-between flax-centr">
@@ -162,5 +169,23 @@
         <p class="year ">© Copyright by Cyber 2020-2026</p>
 
     </footer>
+    <script>
+        const dark = document.querySelector(".dark-bgc"),
+            burger = document.querySelector(".burger"),
+            menu = document.querySelector(".menu"),
+            cancel = document.querySelector(".cancel")
+
+        burger.addEventListener("click", function () {
+            menu.style.left = "0";
+            dark.style.display = "block"
+        })
+
+        function cancelBurger() {
+            menu.style.left = "-100%";
+            dark.style.display = "none"
+        }
+        cancel.addEventListener("click", cancelBurger)
+        dark.addEventListener("click", cancelBurger)
+    </script>
 </body>
 </html>

@@ -170,6 +170,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: top;
+    padding: 0 15px;
 }
 .menu a{
     border-bottom: 3px solid black;
@@ -1142,9 +1143,7 @@ figure:hover {
 }
 
 .aboutus {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
     gap: 71rem;
     padding: 0 0 100rem 0;
 }
@@ -1179,7 +1178,8 @@ figure:hover {
 
 .whyme {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1,1fr);
+    gap: 30px;
     padding: 0 0 100rem 0;
 }
 
@@ -1195,18 +1195,15 @@ figure:hover {
 .original {
     display: inline-block;
     background-color: rgba(241, 241, 241, 1);
-    width: 100%;
-    max-width: 360rem;
     padding: 42rem 46rem 62rem 47rem;
     border-radius: 8rem;
     align-items: center;
+    justify-content: center;
 }
 
 .expert {
     display: inline-block;
     background-color: rgba(241, 241, 241, 1);
-    width: 100%;
-    max-width: 360rem;
     padding: 42rem 46rem 62rem 47rem;
     border-radius: 8rem;
     align-items: center;
@@ -1215,9 +1212,36 @@ figure:hover {
 .speed {
     display: inline-block;
     background-color: rgba(241, 241, 241, 1);
-    width: 100%;
-    max-width: 360rem;
     padding: 42rem 46rem 62rem 47rem;
     border-radius: 8rem;
     align-items: center;
+}
+@media screen and (min-width:768px) {
+    .whyme {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);}
+    .aboutus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 71rem;
+    padding: 0 0 100rem 0;
+}
+.menu{
+    position: static;
+    width: 500rem;
+    height: 50rem;
+    background-color: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 20rem;
+    align-items: center;
+}
+.menu a{
+    border: none;
+    font-size: 27rem;
+}
+.burger, .cancel{
+    display: none;
+}
 }
