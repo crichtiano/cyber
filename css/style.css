@@ -724,7 +724,9 @@ figure h2 {
 
 .btn-dark {
     font-size: 24rem;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: rgba(255, 255, 255, 1);
     background: rgba(23, 23, 23, 1);
     padding: 18rem;
@@ -734,7 +736,9 @@ figure h2 {
 
 .btn-white {
     font-size: 24rem;
-    text-align: center;
+     display: flex;
+    justify-content: center;
+    align-items: center;
     color: rgba(23, 23, 23, 1);
     padding: 18rem;
     border-radius: 5rem;
@@ -1076,13 +1080,32 @@ figure:hover {
     max-width: 450rem;
     }
 }
+.filter{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.vibor li{
+    padding: 7.5px 0 ;
+}
+.vibor a{
+    font-size: 20rem;
+}
+.setings{
+    font-size: 20rem;
+    display: flex;
+    gap: 10rem;
+}
+.vibor h2{
+    font-size: 28rem;
+    font-weight: 600;
+}
 .blog {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 20rem;
     padding: 0 0 100rem 0;
     width: 100%;
-    max-width: 1440rem;
+    max-width: 1140rem;
 }
 
 .blog h2 {
@@ -1126,7 +1149,7 @@ figure:hover {
     gap: 20rem;
     padding: 0 0 100rem 0;
     width: 100%;
-    max-width: 1740rem;
+    max-width: 1140rem;
 }
 .menu{
     position: static;
@@ -1260,5 +1283,72 @@ figure:hover {
 }
 .aboutus img{
     width: 100%;
+}
+}
+@media screen and (min-width:1900px) {
+    .img img{
+        width: 100%;
+        max-width: 1200px;
+    }
+}
+.infocon h2{
+    font-size: 24rem;
+    font-weight: 500;
+    color: #000000;
+}
+.infocon h1{
+    font-size: 24rem;
+    font-weight: 500;
+    color: #000000;
+}
+.infocon p{
+    font-size: 18rem;
+    font-weight: 400;
+}
+.inp{
+    padding: 20rem 0 35rem 0;
+}
+.colip{display: flex;
+    align-items: center;
+    padding: 20rem 0 0 0;
+}
+.roztash img{
+    width: 100%;
+    height: 500rem;
+}
+
+.colip a{
+    padding:0 8px 0 0;
+
+}
+.infocon{
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 80px;
+    width: 100%;
+    max-width: 1140rem;
+    align-items: center;
+    padding: 55px 0 100px 0;
+}
+.textinfo{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20rem;
+}
+@media screen and (min-width:600px) {
+    .infocon{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    width: 100%;
+    max-width: 1140rem;
+    align-items: center;
+    padding: 55px 0 100px 0;
+}
+.textinfo{
+    width: 100%;
+    max-width: 200rem;
+    display: block;
 }
 }
