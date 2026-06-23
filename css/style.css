@@ -1312,7 +1312,7 @@ figure:hover {
     color: #000000;
 }
 .infocon p{
-    font-size: 18rem;
+    font-size: 27rem;
     font-weight: 400;
 }
 .inp{
@@ -1334,11 +1334,11 @@ figure:hover {
 .infocon{
     display: grid;
     grid-template-columns: 1fr ;
-    gap: 80px;
+    gap: 40rem;
     width: 100%;
     max-width: 1140rem;
     align-items: center;
-    padding: 55px 0 100px 0;
+    padding: 55rem 0 100rem 0;
 }
 .textinfo{
     width: 100%;
@@ -1357,8 +1357,6 @@ figure:hover {
     padding: 55px 0 100px 0;
 }
 .textinfo{
-    width: 100%;
-    max-width: 200rem;
     display: block;
 }
 }
