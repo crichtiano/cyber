@@ -171,6 +171,7 @@ a {
     flex-direction: column;
     align-items: top;
     padding: 0 15px;
+    background-color: #797979b3;
 }
 .menu a{
     border-bottom: 3px solid black;
@@ -606,7 +607,7 @@ figure h2 {
 
 .fonipa {
     position: absolute;
-    left: 80%;
+    left: 85%;
     transform: translatex(-50%);
     z-index: 0;
     display: none;
@@ -1104,6 +1105,15 @@ figure:hover {
     font-size: 28rem;
     font-weight: 600;
 }
+
+
+
+
+
+
+
+
+
 .blog {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -1116,6 +1126,7 @@ figure:hover {
 .blog h2 {
     font-size: 24rem;
     font-weight: 500;
+    padding: 0 0 10rem 0;
 }
 
 .blog p {
@@ -1129,7 +1140,15 @@ figure:hover {
     gap: 30rem;
     padding: 20rem 0 30rem 0;
 }
+.textblog img{
+    padding: 0 0 20rem;
+}
 
+.textblog a{
+    font-size: 20rem;
+    color: rgba(159, 159, 159, 1);
+    padding: 0 10rem 0 0 ;
+}
 .activ {
     color: #171717;
     font-weight: 600;
@@ -1165,6 +1184,7 @@ figure:hover {
     flex-direction: row;
     font-size: 20rem;
     align-items: center;
+    background-color: white;
 }
 .menu a{
     border: none;
@@ -1338,7 +1358,7 @@ figure:hover {
     width: 100%;
     max-width: 1140rem;
     align-items: center;
-    padding: 55rem 0 100rem 0;
+    padding: 30rem 0 100rem 0;
 }
 .textinfo{
     width: 100%;
@@ -1354,9 +1374,14 @@ figure:hover {
     width: 100%;
     max-width: 1140rem;
     align-items: center;
-    padding: 55px 0 100px 0;
+    padding: 30rem 0 100rem 0;
 }
 .textinfo{
     display: block;
 }
+}
+@media screen and (min-width:1900px){
+    .colip img {
+        width: 40rem;
+    }
 }
