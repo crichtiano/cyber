@@ -73,14 +73,17 @@ h2 {
 .namer {
     padding: 55 0rem;
 }
-.logo img{
+
+.logo img {
     width: 100%;
     max-width: 140px;
 }
-.foot-logo img{
+
+.foot-logo img {
     width: 100%;
     max-width: 140px;
 }
+
 .wrapper {
     max-width: 1720rem;
     padding: 0 15px;
@@ -123,7 +126,7 @@ h2 {
 }
 
 .Macbook {
-   border-top: 2px solid black;
+    border-top: 2px solid black;
 }
 
 .info {
@@ -154,11 +157,13 @@ a {
     color: #171717;
     cursor: url("/img/aplecotcebtn"), pointer;
 }
+
 .swap {
     font-size: 20rem;
     display: inline-block;
     transition: .5s;
 }
+
 .menu {
     position: fixed;
     left: -100%;
@@ -171,12 +176,15 @@ a {
     flex-direction: column;
     align-items: top;
     padding: 0 15px;
-    background-color: #797979b3;
+    background-color: #ffffffea;
+    transition: 1s;
 }
-.menu a{
+
+.menu a {
     border-bottom: 3px solid black;
     font-size: 50rem;
 }
+
 .burger span {
     display: block;
     height: 7rem;
@@ -217,9 +225,10 @@ a {
     background-color: #2D2D2D;
     font-size: 20rem;
     overflow: scroll;
-    
+
 }
-.main-catalog svg{
+
+.main-catalog svg {
     display: none;
 }
 
@@ -283,9 +292,10 @@ h1 span {
     padding: 0 0 60rem 0;
 }
 
-.iphon17top{
+.iphon17top {
     width: 70vw;
 }
+
 .btn-shopblack {
     font-size: 30rem;
     color: rgba(23, 23, 23, 1);
@@ -301,6 +311,7 @@ h1 span {
 .boton {
     padding: 40rem 0 0 0;
 }
+
 .imageplay {
     width: 100%;
     max-width: 300rem;
@@ -340,10 +351,10 @@ h1 span {
     width: 100%;
     max-width: 200rem;
     padding: 0 15rem 0 0;
-    
+
 }
 
-.textvis {
+picture img .textvis {
     font-size: 18rem;
     flex-direction: column;
     text-align: center;
@@ -358,8 +369,8 @@ h1 span {
 .imagemac {
     width: 100%;
     max-width: 300rem;
-    
-    
+
+
 }
 
 .textmac {
@@ -444,7 +455,7 @@ h1 span {
     padding: 30rem 0rem;
 }
 
-figure {
+.catalog figure {
     background: #F1F1F1;
     border-radius: 8rem;
     text-align: center;
@@ -454,7 +465,7 @@ figure {
     cursor: url("/img/aplecotcebtn"), pointer;
 }
 
-figcaption {
+.catalog figcaption {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -466,14 +477,16 @@ picture {
     min-height: 150rem;
 }
 
-picture img {
+.catalog img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.product{
+
+.product {
     padding: 0 15rem;
 }
+
 .catalog {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -544,11 +557,11 @@ figure h2 {
 }
 
 .product {
-    padding:15rem;
+    padding: 15rem;
 }
 
 .min50 {
-    padding:  0 0 100rem 0;
+    padding: 0 0 100rem 0;
 }
 
 .min50 h2 {
@@ -600,8 +613,6 @@ figure h2 {
     left: 20%;
     transform: translatex(-50%);
     z-index: 0;
-    width: 100%;
-    max-width: 450px;
     display: none;
 }
 
@@ -654,7 +665,8 @@ figure h2 {
     padding: 50rem 0 25rem 0;
     transition: .5s;
 }
-.social img{
+
+.social img {
     width: 100%;
     max-width: 17px;
 }
@@ -739,7 +751,7 @@ figure h2 {
 
 .btn-white {
     font-size: 24rem;
-     display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     color: rgba(23, 23, 23, 1);
@@ -794,7 +806,7 @@ figure h2 {
     transform: rotate(180deg);
 }
 
-figure:hover {
+.catalog figure:hover {
     scale: 1.035;
     box-shadow: 0 0 5rem 3rem rgba(22, 22, 22, .2);
 }
@@ -856,65 +868,69 @@ figure:hover {
 .policy:hover {
     transform: scale(1.1);
 }
+
 @media screen and (min-width:426px) {
-    .iphon , .sp{
+
+    .iphon,
+    .sp {
         display: block;
-        
+
     }
-.iphon17top{
-    width: 50vw;
-}
+
+    .iphon17top {
+        width: 50vw;
+    }
+
     .PlayStation {
-    grid-row: 1/2;
-    grid-column: 1/3;
-}
-.AirPods {
-    grid-column: 1/2;
-    grid-row: 2/2;
-    border: none;
-}
+        grid-row: 1/2;
+        grid-column: 1/3;
+    }
 
-.visionpro {
-    grid-row: 2/3;
-    grid-row: 2/2;
-    border: none;
-}
+    .AirPods {
+        grid-column: 1/2;
+        grid-row: 2/2;
+        border: none;
+    }
 
-.Macbook {
-    grid-column: span 2;
-    grid-row: 3/3;
-    border: none;
-}
-.info {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    .visionpro {
+        grid-row: 2/3;
+        grid-row: 2/2;
+        border: none;
+    }
 
-}
-.categ {
+    .Macbook {
+        grid-column: span 2;
+        grid-row: 3/3;
+        border: none;
+    }
+
+    .info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+    }
+
+    .categ {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         padding: 37rem 0 0 0;
     }
+
     .catalog {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20rem;
     }
-    .foniph,
-    .fonipa{
-        display: block;
-    }
-     .imageair , .imagevis{
+
+    .imageair,
+    .imagevis {
         width: 100px;
-     }
-    .foniph{
-      width: 100%;
-    max-width: 550rem;
     }
-    .fonipa{
-    width: 100%;
-    max-width: 210px;
+
+    .foniph,
+    .fonipa {
+        display: none;
     }
 }
 
@@ -922,36 +938,41 @@ figure:hover {
     .sp {
         display: block;
     }
-.name{
-    height: 90vh;
-}
+
+    .name {
+        height: 90vh;
+    }
+
     .PlayStation {
-    grid-row: 1/2;
-    grid-column: 1/3;
-}
-.AirPods {
-    grid-column: 1/2;
-    grid-row: 2/2;
-    border: none;
-}
+        grid-row: 1/2;
+        grid-column: 1/3;
+    }
 
-.visionpro {
-    grid-row: 2/3;
-    grid-row: 2/2;
-    border: none;
-}
+    .AirPods {
+        grid-column: 1/2;
+        grid-row: 2/2;
+        border: none;
+    }
 
-.Macbook {
-    grid-column: span 2;
-    grid-row: 1/3;
-    border: none;
-}
-.info {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    .visionpro {
+        grid-row: 2/3;
+        grid-row: 2/2;
+        border: none;
+    }
 
-}
+    .Macbook {
+        grid-column: span 2;
+        grid-row: 1/3;
+        border: none;
+    }
+
+    .info {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+    }
+
     .iphon {
         display: block;
     }
@@ -961,147 +982,176 @@ figure:hover {
         grid-template-columns: repeat(4, 1fr);
         gap: 20rem;
     }
+
     .textps,
     .textvis,
     .textair,
-    .textmac{
+    .textmac {
         display: flex;
         flex-direction: column;
         align-items: start;
     }
+
     .categ {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         padding: 37rem 0 0 0;
     }
-.main-catalog {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 60rem;
-    color: rgba(255, 255, 255, 1);
-    background-color: #2D2D2D;
-    font-size: 20rem;
-}
-.main-catalog svg{
-    display: block;
-}
-.li {
-    border-right: 1rem solid #fff;
-    padding: 0 30rem 0 0;
-}
+
+    .main-catalog {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60rem;
+        color: rgba(255, 255, 255, 1);
+        background-color: #2D2D2D;
+        font-size: 20rem;
+    }
+
+    .main-catalog svg {
+        display: block;
+    }
+
+    .li {
+        border-right: 1rem solid #fff;
+        padding: 0 30rem 0 0;
+    }
+
     html {
         font-size: .7px;
     }
+
     .foniph,
-    .fonipa{
+    .fonipa {
         display: block;
     }
+
     .texwin {
-    display: flex;
-    z-index: 1;
-    flex-direction: column;
-    align-items: center;
-}
-.social img{
-    width: 100%;
-    max-width: 26px;
-}
-.burger, .cancel{
-    display: none;
-}
-.menu{
-    position: static;
-    width: 500rem;
-    height: 50rem;
-    background-color: none;
-    display: flex;
-    flex-direction: row;
-    font-size: 20rem;
-}
-.menu a{
-    border: none;
-    font-size: 20px;
-}
-.foniph{
-      width: 100%;
-    max-width: 350px;
+        display: flex;
+        z-index: 1;
+        flex-direction: column;
+        align-items: center;
     }
-    .fonipa{
+
+    .social img {
         width: 100%;
-    max-width: 300px;
+        max-width: 26px;
+    }
+
+    .burger,
+    .cancel {
+        display: none;
+    }
+
+    .menu {
+        position: static;
+        width: 500rem;
+        height: 50rem;
+        background-color: none;
+        display: flex;
+        flex-direction: row;
+        font-size: 20rem;
+    }
+
+    .menu a {
+        border: none;
+        font-size: 20px;
+    }
+
+    .foniph img {
+        width: 100%;
+        max-width: 600rem;
     }
 }
 
 @media screen and (min-width:1900px) {
     html {
-        font-size: 1.75px;
+        font-size: 1.35px;
     }
-    .iphon17top, .sp{
-        width: 1200rem;
+
+    .iphon17top,
+    .sp {
+        width: 800rem;
     }
-    .li svg{
-       width: 40px;
-       height: 40px;
+
+    .li svg {
+        width: 40px;
+        height: 40px;
     }
-    .imageair 
-    {
+
+    .imageair {
         max-width: 200rem;
         width: 100%;
-     }
-    .imagevis{
+    }
+
+    .imagevis {
         max-width: 200rem;
         width: 100%;
-     }
-    .sociall img{
+    }
+
+    .sociall img {
         width: 50px;
     }
-    .socialm img{
+
+    .socialm img {
         width: 60px;
     }
-    .foot-logo img, .logo img{
+
+    .foot-logo img,
+    .logo img {
         max-width: 400px;
         width: 100%;
     }
-    .logo img{
+
+    .logo img {
         max-width: 400px;
         width: 100%;
     }
-    .menu{
+
+    .menu {
         display: flex;
         width: 800px;
         gap: 20rem;
     }
-    .menu{
-    position: static;
-}
-    .menu a{
+
+    .menu {
+        position: static;
+    }
+
+    .menu a {
         font-size: 30rem;
     }
-    .foniph{
-      width: 100%;
-    max-width: 550rem;
+
+    .foniph {
+        width: 100%;
+        max-width: 550rem;
     }
-    .fonipa{
-    max-width: 450rem;
+
+    .fonipa {
+        max-width: 300rem;
     }
 }
-.filter{
+
+.filter {
     display: grid;
     grid-template-columns: 20% 80%;
 }
-.vibor li{
-    padding: 7.5px 0 ;
+
+.vibor li {
+    padding: 7.5px 0;
 }
-.vibor a{
+
+.vibor a {
     font-size: 20rem;
 }
-.setings{
+
+.setings {
     font-size: 20rem;
     display: flex;
     gap: 10rem;
 }
-.vibor h2{
+
+.vibor h2 {
     font-size: 28rem;
     font-weight: 600;
 }
@@ -1117,7 +1167,7 @@ figure:hover {
 .blog {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 20rem;
+    gap: 40rem;
     padding: 0 0 100rem 0;
     width: 100%;
     max-width: 1140rem;
@@ -1140,14 +1190,21 @@ figure:hover {
     gap: 30rem;
     padding: 20rem 0 30rem 0;
 }
-.textblog img{
+
+.ridmore{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textblog img {
     padding: 0 0 20rem;
 }
 
-.textblog a{
+.textblog a {
     font-size: 20rem;
     color: rgba(159, 159, 159, 1);
-    padding: 0 10rem 0 0 ;
+    padding: 0 10rem 0 0;
 }
 .activ {
     color: #171717;
@@ -1164,42 +1221,67 @@ figure:hover {
     font-weight: 500;
     font-size: 18rem;
 }
-
+@media screen and (min-width:600px) {
+    .blog {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20rem;
+        padding: 0 0 100rem 0;
+        width: 100%;
+        max-width: 1140rem;
+    }
+}
 @media screen and (min-width:728px) {
 
-   .blog {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20rem;
-    padding: 0 0 100rem 0;
-    width: 100%;
-    max-width: 1140rem;
+    .blog {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20rem;
+        padding: 0 0 100rem 0;
+        width: 100%;
+        max-width: 1140rem;
+    }
+
+    .menu {
+        position: static;
+        width: 500rem;
+        height: 50rem;
+        background-color: none;
+        display: flex;
+        flex-direction: row;
+        font-size: 20rem;
+        align-items: center;
+        background-color: white;
+
+    }
+.foniph,.fonipa{
+    display: block;
 }
-.menu{
-    position: static;
-    width: 500rem;
-    height: 50rem;
-    background-color: none;
-    display: flex;
-    flex-direction: row;
-    font-size: 20rem;
-    align-items: center;
-    background-color: white;
+    .foniph img{
+        display: block;
+        width: 100%;
+        max-width: 500rem;
+    }
+
+    .fonipa img{
+        display: block;
+        width: 100%;
+        max-width: 500rem;
+    }
 }
-.menu a{
+
+.menu a {
     border: none;
     font-size: 27rem;
 }
-.burger, .cancel{
-    display: none;
-}
-}
-.textblog img{
+
+.textblog img {
     width: 100%;
 }
+
 .aboutus {
     display: grid;
-    grid-template-columns: 1fr, 1fr ;
+    grid-template-columns: 1fr, 1fr;
     gap: 71rem;
     padding: 0 0 100rem 0;
 }
@@ -1208,16 +1290,22 @@ figure:hover {
     padding: 0 0 50rem 0;
     text-align: center;
 }
-.img{
+
+.img {
     width: 100%;
     border-radius: 10px;
 }
+
 .textus {
     width: 100%;
 }
-.img picture {
+
+.img picture img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+
 .hed {
     padding: 0 0 50rem 0;
 }
@@ -1240,14 +1328,14 @@ figure:hover {
 
 .whyme {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     padding: 0 0 100rem 0;
 }
 
 .whyme h2 {
     font-size: 24rem;
-    padding: 30rem 0 ;
+    padding: 0 0 30rem 0;
 }
 
 .whyme p {
@@ -1279,108 +1367,130 @@ figure:hover {
     border-radius: 8rem;
     align-items: center;
 }
+
 @media screen and (min-width:768px) {
     .whyme {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);}
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     .aboutus {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 71rem;
-    padding: 0 0 100rem 0;
-}
-.menu{
-    position: static;
-    width: 500rem;
-    height: 50rem;
-    background-color: none;
-    display: flex;
-    flex-direction: row;
-    font-size: 20rem;
-    align-items: center;
-}
-.menu a{
-    border: none;
-    font-size: 27rem;
-}
-.burger, .cancel{
-    display: none;
-}
-.aboutus img{
-    width: 100%;
-}
-}
-@media screen and (min-width:1900px) {
-    .img img{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 71rem;
+        padding: 0 0 100rem 0;
+    }
+
+    .menu {
+        position: static;
+        width: 500rem;
+        height: 50rem;
+        background-color: none;
+        display: flex;
+        flex-direction: row;
+        font-size: 20rem;
+        align-items: center;
+    }
+
+    .menu a {
+        border: none;
+        font-size: 27rem;
+    }
+
+    .burger,
+    .cancel {
+        display: none;
+    }
+
+    .aboutus img {
         width: 100%;
     }
+}
+
+@media screen and (min-width:1900px) {
+    .img img {
+        width: 100%;
+    }
+
     .aboutus {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40rem;
-    padding: 0 0 100rem 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40rem;
+        padding: 0 0 100rem 0;
+    }
 }
-}
-.infocon h2{
+
+.infocon h2 {
     font-size: 24rem;
     font-weight: 500;
     color: #000000;
 }
-.infocon h1{
+
+.infocon h1 {
     font-size: 24rem;
     font-weight: 500;
     color: #000000;
 }
-.infocon p{
+
+.infocon p {
     font-size: 27rem;
     font-weight: 400;
 }
-.inp{
+
+.inp {
     padding: 20rem 0 35rem 0;
 }
-.colip{display: flex;
+
+.colip {
+    display: flex;
     align-items: center;
     padding: 20rem 0 0 0;
 }
-.roztash img{
+
+.roztash img {
     width: 100%;
     height: 500rem;
 }
 
-.colip a{
-    padding:0 8px 0 0;
+.colip a {
+    padding: 0 8px 0 0;
 
 }
-.infocon{
+
+.infocon {
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
     gap: 40rem;
     width: 100%;
     max-width: 1140rem;
     align-items: center;
     padding: 30rem 0 100rem 0;
 }
-.textinfo{
+
+.textinfo {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20rem;
 }
+
 @media screen and (min-width:600px) {
-    .infocon{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 40px;
-    width: 100%;
-    max-width: 1140rem;
-    align-items: center;
-    padding: 30rem 0 100rem 0;
+    .infocon {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 40px;
+        width: 100%;
+        max-width: 1140rem;
+        align-items: center;
+        padding: 30rem 0 100rem 0;
+    }
+
+    .textinfo {
+        display: block;
+    }
 }
-.textinfo{
-    display: block;
-}
-}
-@media screen and (min-width:1900px){
+
+@media screen and (min-width:1900px) {
     .colip img {
         width: 40rem;
     }
