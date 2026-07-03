@@ -160,7 +160,7 @@ a {
 
 .swap {
     font-size: 20rem;
-    display: inline-block;
+    display: block;
     transition: .5s;
 }
 
@@ -175,9 +175,10 @@ a {
     display: flex;
     flex-direction: column;
     align-items: top;
-    padding: 0 15px;
+    padding: 50rem 15px;
     background-color: #ffffffea;
     transition: 1s;
+    
 }
 
 .menu a {
@@ -491,7 +492,7 @@ picture {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20rem;
-    padding: 0 15rem;
+    padding: 0 15rem 70rem;
 }
 
 .pr {
@@ -511,7 +512,7 @@ figure h2 {
 .price {
     text-align: center;
     font-weight: Bold;
-    font-size: 24rem;
+    font-size: 30rem;
     padding: 20rem 0;
 }
 
@@ -1049,6 +1050,7 @@ figure h2 {
         height: 50rem;
         background-color: none;
         display: flex;
+        padding: 0 15rem;
         flex-direction: row;
         font-size: 20rem;
     }
@@ -1191,12 +1193,6 @@ figure h2 {
     padding: 20rem 0 30rem 0;
 }
 
-.ridmore{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .textblog img {
     padding: 0 0 20rem;
 }
@@ -1205,6 +1201,15 @@ figure h2 {
     font-size: 20rem;
     color: rgba(159, 159, 159, 1);
     padding: 0 10rem 0 0;
+}
+.ridmore{
+    align-items: center;
+}
+.textblog{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
 }
 .activ {
     color: #171717;
@@ -1447,11 +1452,17 @@ figure h2 {
     padding: 20rem 0 0 0;
 }
 
-.roztash img {
-    width: 100%;
-    height: 500rem;
+.roztash {
+   position: relative;
+   width: 100%;
+   min-height: 700rem;
+   border-radius: 10px;
 }
-
+iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
 .colip a {
     padding: 0 8px 0 0;
 
