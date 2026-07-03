@@ -85,6 +85,7 @@ h2 {
 }
 
 .wrapper {
+    width: 90%;
     max-width: 1720rem;
     padding: 0 15px;
     margin: 0rem auto;
@@ -1440,7 +1441,7 @@ figure h2 {
 }
 
 .infocon p {
-    font-size: 27rem;
+    font-size: 18rem;
     font-weight: 400;
 }
 
@@ -1457,8 +1458,11 @@ figure h2 {
 .roztash {
    position: relative;
    width: 100%;
-   min-height: 700rem;
+   top: -72px;
+   min-height: 500rem;
+   overflow: hidden;
    border-radius: 10px;
+   padding-top: 72px;
 }
 iframe{
     position: absolute;
@@ -1475,7 +1479,7 @@ iframe{
     grid-template-columns: 1fr;
     gap: 40rem;
     width: 100%;
-    max-width: 1140rem;
+    margin: 0 auto;
     align-items: center;
     padding: 30rem 0 100rem 0;
 }
@@ -1486,7 +1490,11 @@ iframe{
     grid-template-columns: repeat(2, 1fr);
     gap: 20rem;
 }
-
+@media screen and (min-width:1440px){
+    html{
+        font-size: 1px;
+    }
+}
 @media screen and (min-width:600px) {
     .infocon {
         display: grid;
