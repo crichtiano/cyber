@@ -1205,6 +1205,8 @@ figure h2 {
 .ridmore{
     align-items: center;
 }
+
+
 .textblog{
     display: flex;
     flex-direction: column;
