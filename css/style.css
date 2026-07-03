@@ -1462,6 +1462,7 @@ figure h2 {
    overflow: hidden;
    border-radius: 10px;
    padding-top: 72px;
+   transform: translateY(36px);
 }
 iframe{
     position: absolute;
