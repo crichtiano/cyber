@@ -179,7 +179,7 @@ a {
     padding: 50rem 15px;
     background-color: #ffffffea;
     transition: 1s;
-    
+
 }
 
 .menu a {
@@ -871,270 +871,7 @@ figure h2 {
     transform: scale(1.1);
 }
 
-@media screen and (min-width:426px) {
 
-    .iphon,
-    .sp {
-        display: block;
-
-    }
-
-    .iphon17top {
-        width: 50vw;
-    }
-
-    .PlayStation {
-        grid-row: 1/2;
-        grid-column: 1/3;
-    }
-
-    .AirPods {
-        grid-column: 1/2;
-        grid-row: 2/2;
-        border: none;
-    }
-
-    .visionpro {
-        grid-row: 2/3;
-        grid-row: 2/2;
-        border: none;
-    }
-
-    .Macbook {
-        grid-column: span 2;
-        grid-row: 3/3;
-        border: none;
-    }
-
-    .info {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-
-    }
-
-    .categ {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        padding: 37rem 0 0 0;
-    }
-
-    .catalog {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20rem;
-    }
-
-    .imageair,
-    .imagevis {
-        width: 100px;
-    }
-
-    .foniph,
-    .fonipa {
-        display: none;
-    }
-}
-
-@media screen and (min-width:1024px) {
-    .sp {
-        display: block;
-    }
-
-    .name {
-        height: 90vh;
-    }
-
-    .PlayStation {
-        grid-row: 1/2;
-        grid-column: 1/3;
-    }
-
-    .AirPods {
-        grid-column: 1/2;
-        grid-row: 2/2;
-        border: none;
-    }
-
-    .visionpro {
-        grid-row: 2/3;
-        grid-row: 2/2;
-        border: none;
-    }
-
-    .Macbook {
-        grid-column: span 2;
-        grid-row: 1/3;
-        border: none;
-    }
-
-    .info {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-
-    }
-
-    .iphon {
-        display: block;
-    }
-
-    .catalog {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20rem;
-    }
-
-    .textps,
-    .textvis,
-    .textair,
-    .textmac {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-    }
-
-    .categ {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        padding: 37rem 0 0 0;
-    }
-
-    .main-catalog {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 60rem;
-        color: rgba(255, 255, 255, 1);
-        background-color: #2D2D2D;
-        font-size: 20rem;
-    }
-
-    .main-catalog svg {
-        display: block;
-    }
-
-    .li {
-        border-right: 1rem solid #fff;
-        padding: 0 30rem 0 0;
-    }
-
-    html {
-        font-size: .7px;
-    }
-
-    .foniph,
-    .fonipa {
-        display: block;
-    }
-
-    .texwin {
-        display: flex;
-        z-index: 1;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .social img {
-        width: 100%;
-        max-width: 26px;
-    }
-
-    .burger,
-    .cancel {
-        display: none;
-    }
-
-    .menu {
-        position: static;
-        width: 500rem;
-        height: 50rem;
-        background-color: none;
-        display: flex;
-        padding: 0 15rem;
-        flex-direction: row;
-        font-size: 20rem;
-    }
-
-    .menu a {
-        border: none;
-        font-size: 20px;
-    }
-
-    .foniph img {
-        width: 100%;
-        max-width: 600rem;
-    }
-}
-
-@media screen and (min-width:1900px) {
-    html {
-        font-size: 1.35px;
-    }
-
-    .iphon17top,
-    .sp {
-        width: 800rem;
-    }
-
-    .li svg {
-        width: 20px;
-        height: 40px;
-    }
-
-    .imageair {
-        max-width: 200rem;
-        width: 100%;
-    }
-
-    .imagevis {
-        max-width: 200rem;
-        width: 100%;
-    }
-
-    .sociall img {
-        width: 30rem;
-        height: 30rem;
-    }
-
-    .socialm img {
-        width: 60px;
-    }
-
-    .foot-logo img,
-    .logo img {
-        max-width: 400px;
-        width: 100%;
-    }
-
-    .logo img {
-        max-width: 400px;
-        width: 100%;
-    }
-
-    .menu {
-        display: flex;
-        width: 800px;
-        gap: 20rem;
-    }
-
-    .menu {
-        position: static;
-    }
-
-    .menu a {
-        font-size: 30rem;
-    }
-
-    .foniph {
-        width: 100%;
-        max-width: 550rem;
-    }
-
-    .fonipa {
-        max-width: 300rem;
-    }
-}
 
 .filter {
     display: grid;
@@ -1204,17 +941,19 @@ figure h2 {
     color: rgba(159, 159, 159, 1);
     padding: 0 10rem 0 0;
 }
-.ridmore{
+
+.ridmore {
     align-items: center;
 }
 
 
-.textblog{
+.textblog {
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
 }
+
 .activ {
     color: #171717;
     font-weight: 600;
@@ -1230,54 +969,8 @@ figure h2 {
     font-weight: 500;
     font-size: 18rem;
 }
-@media screen and (min-width:600px) {
-    .blog {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20rem;
-        padding: 0 0 100rem 0;
-        width: 100%;
-        max-width: 1140rem;
-    }
-}
-@media screen and (min-width:728px) {
 
-    .blog {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20rem;
-        padding: 0 0 100rem 0;
-        width: 100%;
-        max-width: 1140rem;
-    }
 
-    .menu {
-        position: static;
-        width: 500rem;
-        height: 50rem;
-        background-color: none;
-        display: flex;
-        flex-direction: row;
-        font-size: 20rem;
-        align-items: center;
-        background-color: white;
-
-    }
-.foniph,.fonipa{
-    display: block;
-}
-    .foniph img{
-        display: block;
-        width: 100%;
-        max-width: 500rem;
-    }
-
-    .fonipa img{
-        display: block;
-        width: 100%;
-        max-width: 500rem;
-    }
-}
 
 .menu a {
     border: none;
@@ -1309,7 +1002,7 @@ figure h2 {
     width: 100%;
 }
 
-.img picture img{
+.img picture img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1377,6 +1070,446 @@ figure h2 {
     align-items: center;
 }
 
+.infocon h2 {
+    font-size: 24rem;
+    font-weight: 500;
+    color: #000000;
+}
+
+.infocon h1 {
+    font-size: 24rem;
+    font-weight: 500;
+    color: #000000;
+}
+
+.infocon p {
+    font-size: 18rem;
+    font-weight: 400;
+}
+
+.inp {
+    padding: 20rem 0 35rem 0;
+}
+
+.colip {
+    display: flex;
+    align-items: center;
+    padding: 20rem 0 0 0;
+}
+
+.roztash {
+    position: relative;
+    width: 100%;
+    min-height: 500rem;
+    overflow: hidden;
+    border-radius: 10px;
+    padding-top: 72px;
+    transform: translateY(36px);
+}
+
+iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -72px;
+    left: 0;
+}
+
+.colip a {
+    padding: 0 8px 0 0;
+
+}
+
+
+
+.infocon {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40rem;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    padding: 30rem 0 100rem 0;
+}
+
+.textinfo {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20rem;
+}
+
+
+
+.photku {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    width: 100%;
+    max-width: 900rem;
+    height: 100%;
+    max-height: 600rem;
+    gap: 20px;
+}
+
+.kam {
+    grid-column: 1/2;
+    border: none;
+}
+
+.ekr {
+    grid-row: 2/3;
+    border: none;
+}
+
+.hedpr {
+    grid-column: span 2;
+    grid-row: 1/4;
+    border: none;
+}
+
+.kam img {
+    width: 100%;
+    background-color: rgba(241, 241, 241, 1);
+    max-width: 300rem;
+    border-radius: 8px;
+}
+
+.ekr img {
+    width: 100%;
+    max-width: 300rem;
+    background-color: rgba(241, 241, 241, 1);
+    padding: 15rem 0;
+    border-radius: 8px;
+}
+
+.hedpr img {
+    width: 100%;
+    max-width: 300rem;
+    background-color: rgba(241, 241, 241, 1);
+    padding: 50rem;
+    border-radius: 8px;
+}
+
+.neypr {
+    font-size: 30rem;
+}
+
+.oldpr {
+    font-size: 24rem;
+    text-decoration: line-through;
+    color: rgba(159, 159, 159, 1);
+}
+
+.prise {
+    display: flex;
+    gap: 10rem;
+    align-items: center;
+    padding: 30rem 0;
+}
+
+.selectmem {
+    padding: 30rem 0;
+}
+
+.opustex {
+    padding: 30rem 0;
+}
+
+.produckt {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.oph1 {
+    font-weight: 500;
+    font-size: 42rem;
+    color: rgba(23, 23, 23, 1);
+}
+
+.colorip {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+}
+
+.colorip input {
+    appearance: none;
+    width: 30rem;
+    height: 30rem;
+    outline: 2px solid rgba(159, 159, 159, 1);
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.blue:checked{
+    outline: 2px solid rgba(28, 41, 96, 1);
+    border: 2px solid rgb(0, 0, 0);
+}
+.orange:checked{
+    outline: 2px solid rgba(224, 148, 27, 1);
+    border: 2px solid rgb(0, 0, 0);
+}
+.blak:checked{
+    outline: 2px solid rgba(23, 23, 23, 1);
+    border: 2px solid rgb(0, 0, 0);
+}
+.wite:checked{
+    outline: 2px solid rgba(255, 255, 255, 1);
+    border: 2px solid rgb(0, 0, 0);
+}
+.pink:checked{
+    outline: 2px solid rgba(215, 150, 213, 1);
+    border: 2px solid rgb(0, 0, 0);
+}
+.blue{
+    background: rgba(28, 41, 96, 1);
+}
+.orange{
+    background: rgba(224, 148, 27, 1);
+}
+.blak{
+    background: rgba(23, 23, 23, 1);
+}
+.wite{
+    background: rgba(255, 255, 255, 1);
+}
+.pink{
+    background: rgba(215, 150, 213, 1);
+}
+.opus h2 {
+    font-weight: 500;
+    font-size: 20rem;
+}
+
+.tcon {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20rem;
+    row-gap: 10rem;
+}
+
+.tcon h2 {
+    font-size: 16rem;
+    color: rgba(159, 159, 159, 1);
+}
+
+.tcon p {
+    font-size: 18rem;
+}
+
+.tehnh {
+    display: inline-block;
+    background-color: rgba(241, 241, 241, 1);
+    padding: 23rem 20rem;
+    border-radius: 8rem;
+    align-items: center;
+}
+
+.opustex {
+    font-size: 18rem;
+}
+
+.butonu {
+    display: flex;
+    gap: 20rem;
+    justify-content: center;
+}
+.table{
+    overflow: scroll;
+}
+.btnby {
+    font-size: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(23, 23, 23, 1);
+    padding: 22rem 100rem;
+    border-radius: 5rem;
+}
+
+.btnwish {
+    font-size: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(23, 23, 23, 1);
+    padding: 22rem 45rem;
+    border-radius: 5rem;
+    border: 1rem solid rgba(23, 23, 23, 1);
+}
+
+.table h2 {
+    padding: 100rem 0 50rem 0;
+    text-align: center;
+}
+
+.portab {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    height: 30vh;
+}
+
+.portab th,
+.portab td {
+    border: 1px solid rgba(23, 23, 23, 1);
+}
+
+.portab th {
+    background: rgba(23, 23, 23, 1);
+    border: 1px solid #fff;
+    color: #F1F1F1;
+    font-size: 28rem;
+    font-weight: 600;
+    padding: 35rem;
+}
+
+.cat {
+    font-size: 28rem;
+    padding: 20rem 0;
+    font-weight: 600;
+    background: #ffffff;
+    text-align: center;
+}
+
+.portab td {
+    font-size: 24rem;
+}
+
+.like h2 {
+    text-align: center;
+    padding: 100rem 0 50rem 0;
+}
+@media screen and (min-width:426px) {
+
+    .iphon,
+    .sp {
+        display: block;
+
+    }
+
+    .iphon17top {
+        width: 50vw;
+    }
+
+    .PlayStation {
+        grid-row: 1/2;
+        grid-column: 1/3;
+    }
+
+    .AirPods {
+        grid-column: 1/2;
+        grid-row: 2/2;
+        border: none;
+    }
+
+    .visionpro {
+        grid-row: 2/3;
+        grid-row: 2/2;
+        border: none;
+    }
+
+    .Macbook {
+        grid-column: span 2;
+        grid-row: 3/3;
+        border: none;
+    }
+
+    .info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+    }
+
+    .categ {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 37rem 0 0 0;
+    }
+
+    .catalog {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20rem;
+    }
+
+    .imageair,
+    .imagevis {
+        width: 100px;
+    }
+
+    .foniph,
+    .fonipa {
+        display: none;
+    }
+}
+@media screen and (min-width:600px) {
+    .infocon {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 40px;
+        width: 100%;
+        max-width: 1140rem;
+        align-items: center;
+        padding: 30rem 0 100rem 0;
+    }
+
+    .textinfo {
+        display: block;
+    }
+    .blog {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20rem;
+        padding: 0 0 100rem 0;
+        width: 100%;
+        max-width: 1140rem;
+    }
+}
+@media screen and (min-width:728px) {
+
+    .blog {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20rem;
+        padding: 0 0 100rem 0;
+        width: 100%;
+        max-width: 1140rem;
+    }
+
+    .menu {
+        position: static;
+        width: 500rem;
+        height: 50rem;
+        background-color: none;
+        display: flex;
+        flex-direction: row;
+        font-size: 20rem;
+        align-items: center;
+        background-color: white;
+
+    }
+
+    .foniph,
+    .fonipa {
+        display: block;
+    }
+
+    .foniph img {
+        display: block;
+        width: 100%;
+        max-width: 500rem;
+    }
+
+    .fonipa img {
+        display: block;
+        width: 100%;
+        max-width: 500rem;
+    }
+}
 @media screen and (min-width:768px) {
     .whyme {
         display: grid;
@@ -1414,110 +1547,229 @@ figure h2 {
     .aboutus img {
         width: 100%;
     }
+    .produckt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+}
+
+
+
+
+@media screen and (min-width:1024px) {
+    .sp {
+        display: block;
+    }
+    
+    .name {
+        height: 90vh;
+    }
+    
+    .PlayStation {
+        grid-row: 1/2;
+        grid-column: 1/3;
+    }
+    
+    .AirPods {
+        grid-column: 1/2;
+        grid-row: 2/2;
+        border: none;
+    }
+    
+    .visionpro {
+        grid-row: 2/3;
+        grid-row: 2/2;
+        border: none;
+    }
+    
+    .Macbook {
+        grid-column: span 2;
+        grid-row: 1/3;
+        border: none;
+    }
+    
+    .info {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        
+    }
+    
+    .iphon {
+        display: block;
+    }
+    
+    .catalog {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20rem;
+    }
+    
+    .textps,
+    .textvis,
+    .textair,
+    .textmac {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    
+    .categ {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        padding: 37rem 0 0 0;
+    }
+    
+    .main-catalog {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60rem;
+        color: rgba(255, 255, 255, 1);
+        background-color: #2D2D2D;
+        font-size: 20rem;
+    }
+    
+    .main-catalog svg {
+        display: block;
+    }
+    
+    .li {
+        border-right: 1rem solid #fff;
+        padding: 0 30rem 0 0;
+    }
+    
+    html {
+        font-size: .7px;
+    }
+    
+    .foniph,
+    .fonipa {
+        display: block;
+    }
+    
+    .texwin {
+        display: flex;
+        z-index: 1;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .social img {
+        width: 100%;
+        max-width: 26px;
+    }
+    
+    .burger,
+    .cancel {
+        display: none;
+    }
+    
+    .menu {
+        position: static;
+        width: 500rem;
+        height: 50rem;
+        background-color: none;
+        display: flex;
+        padding: 0 15rem;
+        flex-direction: row;
+        font-size: 20rem;
+    }
+    
+    .menu a {
+        border: none;
+        font-size: 20px;
+    }
+    
+    .foniph img {
+        width: 100%;
+        max-width: 600rem;
+    }
+}
+@media screen and (min-width:1440px) {
+    html {
+        font-size: 1px;
+    }
 }
 
 @media screen and (min-width:1900px) {
+    html {
+        font-size: 1.35px;
+    }
+    
+    .iphon17top,
+    .sp {
+        width: 800rem;
+    }
+    
+    .li svg {
+        width: 20px;
+        height: 40px;
+    }
+    
+    .imageair {
+        max-width: 200rem;
+        width: 100%;
+    }
+    
+    .imagevis {
+        max-width: 200rem;
+        width: 100%;
+    }
+    
+    .sociall img {
+        width: 30rem;
+        height: 30rem;
+    }
+    
+    .socialm img {
+        width: 60px;
+    }
+    
+    .foot-logo img,
+    .logo img {
+        max-width: 400px;
+        width: 100%;
+    }
+    
+    .logo img {
+        max-width: 400px;
+        width: 100%;
+    }
+    
+    .menu {
+        display: flex;
+        width: 800px;
+        gap: 20rem;
+    }
+    
+    .menu {
+        position: static;
+    }
+    
+    .menu a {
+        font-size: 30rem;
+    }
+    
+    .foniph {
+        width: 100%;
+        max-width: 550rem;
+    }
+    
+    .fonipa {
+        max-width: 300rem;
+    }
+    .colip img {
+        width: 40rem;
+    }
     .img img {
         width: 100%;
     }
-
+    
     .aboutus {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 40rem;
         padding: 0 0 100rem 0;
-    }
-}
-
-.infocon h2 {
-    font-size: 24rem;
-    font-weight: 500;
-    color: #000000;
-}
-
-.infocon h1 {
-    font-size: 24rem;
-    font-weight: 500;
-    color: #000000;
-}
-
-.infocon p {
-    font-size: 18rem;
-    font-weight: 400;
-}
-
-.inp {
-    padding: 20rem 0 35rem 0;
-}
-
-.colip {
-    display: flex;
-    align-items: center;
-    padding: 20rem 0 0 0;
-}
-
-.roztash {
-   position: relative;
-   width: 100%;
-   min-height: 500rem;
-   overflow: hidden;
-   border-radius: 10px;
-   padding-top: 72px;
-   transform: translateY(36px);
-}
-iframe{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: -72px;
-    left: 0;
-}
-.colip a {
-    padding: 0 8px 0 0;
-
-}
-
-
-
-.infocon {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 40rem;
-    width: 100%;
-    margin: 0 auto;
-    align-items: center;
-    padding: 30rem 0 100rem 0;
-}
-
-.textinfo {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20rem;
-}
-@media screen and (min-width:1440px){
-    html{
-        font-size: 1px;
-    }
-}
-@media screen and (min-width:600px) {
-    .infocon {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        gap: 40px;
-        width: 100%;
-        max-width: 1140rem;
-        align-items: center;
-        padding: 30rem 0 100rem 0;
-    }
-
-    .textinfo {
-        display: block;
-    }
-}
-
-@media screen and (min-width:1900px) {
-    .colip img {
-        width: 40rem;
     }
 }
