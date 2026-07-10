@@ -1382,6 +1382,40 @@ iframe {
     text-align: center;
     padding: 100rem 0 50rem 0;
 }
+.formmem{
+    display: flex;
+    justify-content: space-between;
+}
+.mem{
+    position: relative;
+    display: inline-block;
+}
+.mem input{
+    margin: 0;
+    appearance: none;
+    outline: none;
+    width: 120rem;
+    height: 60rem;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid rgba(159, 159, 159, 1);
+    background: #fff;
+    gap: 20px;
+}
+.mem span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: rgba(159, 159, 159, 1);
+    transform: translate(-50%, -50%);
+    font-size: 28rem;
+}
+.mem input:checked{
+    border-color: #000000;
+}
+.mem input:checked + span{
+    color: #000000;
+}
 @media screen and (min-width:426px) {
 
     .iphon,
