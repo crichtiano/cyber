@@ -509,7 +509,15 @@ figure h2 {
     font-weight: 500;
     font-size: 24rem;
 }
-
+.hurd{
+    position: relative;
+}
+.serc{
+    position: absolute;
+    left: 90%;
+    width: 25rem;
+    height: 20rem;
+}
 .price {
     text-align: center;
     font-weight: Bold;
@@ -1143,53 +1151,48 @@ iframe {
 
 .photku {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 40% 1fr;
     align-items: center;
-    width: 100%;
-    max-width: 900rem;
-    height: 100%;
-    max-height: 600rem;
     gap: 20px;
 }
 
-.kam {
-    grid-column: 1/2;
-    border: none;
+.tph {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    height: 100%;
 }
 
-.ekr {
-    grid-row: 2/3;
-    border: none;
-}
-
-.hedpr {
-    grid-column: span 2;
-    grid-row: 1/4;
-    border: none;
+.oph {
+    width: 100%;
+    height: 100%;
 }
 
 .kam img {
-    width: 100%;
     background-color: rgba(241, 241, 241, 1);
-    max-width: 300rem;
     border-radius: 8px;
+    width: 100%;
 }
 
 .ekr img {
-    width: 100%;
-    max-width: 300rem;
     background-color: rgba(241, 241, 241, 1);
     padding: 15rem 0;
+    width: 100%;
     border-radius: 8px;
 }
 
 .hedpr img {
-    width: 100%;
-    max-width: 300rem;
     background-color: rgba(241, 241, 241, 1);
-    padding: 50rem;
+    width: 100%;
     border-radius: 8px;
+}
+
+.hedpr {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .neypr {
@@ -1226,6 +1229,7 @@ iframe {
     font-weight: 500;
     font-size: 42rem;
     color: rgba(23, 23, 23, 1);
+    text-transform: none;
 }
 
 .colorip {
@@ -1234,49 +1238,65 @@ iframe {
     gap: 10rem;
 }
 
+.colform {
+    display: flex;
+    gap: 10px;
+}
+
+.colform .wite {
+    border: 1px solid #000000;
+}
+
 .colorip input {
     appearance: none;
     width: 30rem;
     height: 30rem;
-    outline: 2px solid rgba(159, 159, 159, 1);
+    outline: 1px solid rgb(255, 255, 255);
     border-radius: 50%;
-    box-sizing: border-box;
+    border: 2px solid #ffffff;
 }
-.blue:checked{
-    outline: 2px solid rgba(28, 41, 96, 1);
-    border: 2px solid rgb(0, 0, 0);
+
+.blue:checked {
+    outline-color: rgba(28, 41, 96, 1);
 }
-.orange:checked{
-    outline: 2px solid rgba(224, 148, 27, 1);
-    border: 2px solid rgb(0, 0, 0);
+
+.orange:checked {
+    outline-color: rgba(224, 148, 27, 1);
 }
-.blak:checked{
-    outline: 2px solid rgba(23, 23, 23, 1);
-    border: 2px solid rgb(0, 0, 0);
+
+.blak:checked {
+    outline-color: rgba(23, 23, 23, 1);
 }
-.wite:checked{
-    outline: 2px solid rgba(255, 255, 255, 1);
-    border: 2px solid rgb(0, 0, 0);
+
+.wite:checked {
+    outline-color: rgb(0, 0, 0);
 }
-.pink:checked{
-    outline: 2px solid rgba(215, 150, 213, 1);
-    border: 2px solid rgb(0, 0, 0);
+
+.pink:checked {
+    outline-color: rgba(215, 150, 213, 1);
 }
-.blue{
+
+.blue {
     background: rgba(28, 41, 96, 1);
 }
-.orange{
+
+.orange {
     background: rgba(224, 148, 27, 1);
 }
-.blak{
+
+.blak {
     background: rgba(23, 23, 23, 1);
 }
-.wite{
+
+.wite {
     background: rgba(255, 255, 255, 1);
+    border: 1px solid #000000;
 }
-.pink{
+
+.pink {
     background: rgba(215, 150, 213, 1);
 }
+
 .opus h2 {
     font-weight: 500;
     font-size: 20rem;
@@ -1315,9 +1335,11 @@ iframe {
     gap: 20rem;
     justify-content: center;
 }
-.table{
+
+.table {
     overflow: scroll;
 }
+
 .btnby {
     font-size: 30rem;
     display: flex;
@@ -1325,7 +1347,8 @@ iframe {
     align-items: center;
     color: rgba(255, 255, 255, 1);
     background: rgba(23, 23, 23, 1);
-    padding: 22rem 100rem;
+    padding: 22rem 0;
+    width: 100%;
     border-radius: 5rem;
 }
 
@@ -1335,7 +1358,8 @@ iframe {
     justify-content: center;
     align-items: center;
     color: rgba(23, 23, 23, 1);
-    padding: 22rem 45rem;
+    padding: 22rem 0;
+    width: 100%;
     border-radius: 5rem;
     border: 1rem solid rgba(23, 23, 23, 1);
 }
@@ -1376,25 +1400,29 @@ iframe {
 
 .portab td {
     font-size: 24rem;
+    padding: 0 30rem;
 }
 
 .like h2 {
     text-align: center;
     padding: 100rem 0 50rem 0;
 }
-.formmem{
+
+.formmem {
     display: flex;
     justify-content: space-between;
 }
-.mem{
+
+.mem {
     position: relative;
     display: inline-block;
 }
-.mem input{
+
+.mem input {
     margin: 0;
     appearance: none;
     outline: none;
-    width: 120rem;
+    width: 125rem;
     height: 60rem;
     box-sizing: border-box;
     border-radius: 8px;
@@ -1402,20 +1430,25 @@ iframe {
     background: #fff;
     gap: 20px;
 }
-.mem span{
+
+.mem span {
     position: absolute;
     top: 50%;
     left: 50%;
     color: rgba(159, 159, 159, 1);
     transform: translate(-50%, -50%);
     font-size: 28rem;
+    font-weight: 400;
 }
-.mem input:checked{
+
+.mem input:checked {
     border-color: #000000;
 }
-.mem input:checked + span{
+
+.mem input:checked+span {
     color: #000000;
 }
+
 @media screen and (min-width:426px) {
 
     .iphon,
@@ -1480,6 +1513,7 @@ iframe {
         display: none;
     }
 }
+
 @media screen and (min-width:600px) {
     .infocon {
         display: grid;
@@ -1494,6 +1528,7 @@ iframe {
     .textinfo {
         display: block;
     }
+
     .blog {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -1503,6 +1538,7 @@ iframe {
         max-width: 1140rem;
     }
 }
+
 @media screen and (min-width:728px) {
 
     .blog {
@@ -1526,7 +1562,10 @@ iframe {
         background-color: white;
 
     }
-
+    .burger,
+    .cancel {
+        display: none;
+    }
     .foniph,
     .fonipa {
         display: block;
@@ -1544,6 +1583,7 @@ iframe {
         max-width: 500rem;
     }
 }
+
 @media screen and (min-width:768px) {
     .whyme {
         display: grid;
@@ -1556,7 +1596,6 @@ iframe {
         gap: 71rem;
         padding: 0 0 100rem 0;
     }
-
     .menu {
         position: static;
         width: 500rem;
@@ -1581,10 +1620,16 @@ iframe {
     .aboutus img {
         width: 100%;
     }
+    .catalog {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20rem;
+    }
     .produckt {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+        display: grid;
+        grid-template-columns: 1fr 40%;
+        gap: 20px;
+    }
 }
 
 
@@ -1594,66 +1639,65 @@ iframe {
     .sp {
         display: block;
     }
-    
+
     .name {
         height: 90vh;
     }
-    
+
     .PlayStation {
         grid-row: 1/2;
         grid-column: 1/3;
     }
-    
+
     .AirPods {
         grid-column: 1/2;
         grid-row: 2/2;
         border: none;
     }
-    
+
     .visionpro {
         grid-row: 2/3;
         grid-row: 2/2;
         border: none;
     }
-    
+
     .Macbook {
         grid-column: span 2;
         grid-row: 1/3;
         border: none;
     }
-    
+
     .info {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        
+
     }
-    
+
     .iphon {
         display: block;
     }
-    
+
     .catalog {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 20rem;
     }
-    
+
     .textps,
     .textvis,
     .textair,
     .textmac {
         display: flex;
         flex-direction: column;
-        align-items: start;
     }
-    
+
     .categ {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         padding: 37rem 0 0 0;
     }
-    
+
     .main-catalog {
         display: flex;
         align-items: center;
@@ -1663,42 +1707,42 @@ iframe {
         background-color: #2D2D2D;
         font-size: 20rem;
     }
-    
+
     .main-catalog svg {
         display: block;
     }
-    
+
     .li {
         border-right: 1rem solid #fff;
         padding: 0 30rem 0 0;
     }
-    
+
     html {
         font-size: .7px;
     }
-    
+
     .foniph,
     .fonipa {
         display: block;
     }
-    
+
     .texwin {
         display: flex;
         z-index: 1;
         flex-direction: column;
         align-items: center;
     }
-    
+
     .social img {
         width: 100%;
         max-width: 26px;
     }
-    
+
     .burger,
     .cancel {
         display: none;
     }
-    
+
     .menu {
         position: static;
         width: 500rem;
@@ -1709,17 +1753,18 @@ iframe {
         flex-direction: row;
         font-size: 20rem;
     }
-    
+
     .menu a {
         border: none;
         font-size: 20px;
     }
-    
+
     .foniph img {
         width: 100%;
         max-width: 600rem;
     }
 }
+
 @media screen and (min-width:1440px) {
     html {
         font-size: 1px;
@@ -1730,76 +1775,78 @@ iframe {
     html {
         font-size: 1.35px;
     }
-    
+
     .iphon17top,
     .sp {
         width: 800rem;
     }
-    
+
     .li svg {
         width: 20px;
         height: 40px;
     }
-    
+
     .imageair {
         max-width: 200rem;
         width: 100%;
     }
-    
+
     .imagevis {
         max-width: 200rem;
         width: 100%;
     }
-    
+
     .sociall img {
         width: 30rem;
         height: 30rem;
     }
-    
+
     .socialm img {
         width: 60px;
     }
-    
+
     .foot-logo img,
     .logo img {
         max-width: 400px;
         width: 100%;
     }
-    
+
     .logo img {
         max-width: 400px;
         width: 100%;
     }
-    
+
     .menu {
         display: flex;
         width: 800px;
         gap: 20rem;
     }
-    
+
     .menu {
         position: static;
     }
-    
+
     .menu a {
         font-size: 30rem;
     }
-    
+
     .foniph {
         width: 100%;
         max-width: 550rem;
     }
-    
+
     .fonipa {
         max-width: 300rem;
     }
+
     .colip img {
         width: 40rem;
     }
+
     .img img {
         width: 100%;
     }
-    
+
     .aboutus {
         display: grid;
         grid-template-columns: 1fr 1fr;
