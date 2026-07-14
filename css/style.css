@@ -1451,7 +1451,15 @@ iframe {
 .mem input:checked+span {
     color: #000000;
 }
-
+.serc{
+    stroke: #F1F1F1;
+    fill: transparent;
+    transition: .5s;
+}
+.serc:hover{
+    stroke: #000000;
+    fill: #000000;
+}
 @media screen and (min-width:426px) {
 
     .iphon,
