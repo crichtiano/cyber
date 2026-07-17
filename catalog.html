@@ -9,7 +9,7 @@
 </head>
 
 <body>
-   <header class="header">
+    <header class="header">
         <div class="head wrapper">
             <div class="logo">
                 <a href="index.html">
@@ -77,321 +77,497 @@
         </div>
     </header>
     <main>
-        <div class="filter">
+        <div class="knopka wrapper">
+            <a class="kn" href="#">home</a>
+            <p>/</p>
+            <a class="kn" href="#">catalog</a>
+            <p>/</p>
+            <a class="activ" href="#"> phones</a>
+        </div>
+        <div class="filter wrapper">
+            <div class="dark-bgc"></div>
+            <div class="burger filmen">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#000">
+                        <path d="M400-240v-80h160v80H400ZM240-440v-80h480v80H240ZM120-640v-80h720v80H120Z" /></svg></a>
+            </div>
             <div class="vibor">
-                <div class="setings">
-                    <p>
-                        <a href="#">home</a>
-                        <p>/</p>
-                        <a href="#">catalog</a>
-                        <p>/</p>
-                        <a href="#"> phones</a>
-                    </p>
-                </div>
-                <div class="Price">
+                <form class="class">
                     <h2>Price</h2>
-                    <p>
-                        <a class="btn-price" href="#">$300</a>
-                    </p>
-                    <p>
-                        <a class="btn-price" href="#">$10 000</a>
-                    </p>
-                </div>
-                <div class="Brand">
+                    <div class="pricemin">
+                        <input type="number" min="0" placeholder="Min">
+                        <input type="number" min="0" placeholder="Max">
+                    </div>
+                </form>
+                <form class="class">
                     <h2>Brand</h2>
-                    <ul>
-                        <li><a href="#">Apple (30)</a></li>
-                        <li><a href="#">Samsung (10)</a></li>
-                        <li><a href="#">Xiaomi (74)</a></li>
-                        <li><a href="#">Poco (15)</a></li>
-                        <li><a href="#">Huawai (46)</a></li>
-                        <li><a href="#">Nokia (7)</a></li>
-                    </ul>
-                    <a href="#">see all</a>
-                </div>
-                <div class="memory">
+                    <label class="lebfl">
+                        <input type="checkbox">
+                        <p>Apple <span class="spbran">(30)</span></p>
+                    </label>
+                    <label class="lebfl">
+                        <input type="checkbox">
+                        <p>Samsung <span class="spbran">(10)</span></p>
+                    </label>
+                    <label class="lebfl">
+                        <input type="checkbox">
+                        <p>Xiaomi <span class="spbran">(74)</span></p>
+                    </label>
+                    <label class="lebfl">
+                        <input type="checkbox">
+                        <p>Poco <span class="spbran">(15)</span></p>
+                    </label>
+                    <label class="lebfl">
+                        <input type="checkbox">
+                        <p>Huawai <span class="spbran">(46)</span></p>
+                    </label>
+                    <label class="lebfl">
+                        <input type="checkbox">
+                        <p>Nokia <span class="spbran">(7)</span></p>
+                    </label>
+                    <a class="seeall" href="#">see all <svg width="13" height="8" viewBox="0 0 13 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L6.50002 6L12 1" stroke="#9F9F9F" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </a>
+                </form>
+                <form class="class">
                     <h2>Memory</h2>
-                    <ul>
-                        <li><a href="#">16 GB (6)</a></li>
-                        <li><a href="#">32 GB (18)</a></li>
-                        <li><a href="#">64 GB (74)</a></li>
-                        <li><a href="#">128 GB (45)</a></li>
-                        <li><a href="#">256 GB (334)</a></li>
-                        <li><a href="#">512 GB (120)</a></li>
-                    </ul>
-                    <a href="#">see all</a>
-                </div>
-                <div class="Color">
+                    <label class="lebfl">
+                        <input type="checkbox">
+                        <p>16 GB <span class="spbran">(6)</span></p>
+                    </label>
+                    <label class="lebfl">
+                        <input type="checkbox">
+                        <p>32 GB <span class="spbran">(18)</span></p>
+                    </label>
+                    <label class="lebfl">
+                        <input type="checkbox">
+                        <p>64 GB <span class="spbran">(74)</span></p>
+                    </label>
+                    <label class="lebfl">
+                        <input type="checkbox">
+                        <p>128 GB <span class="spbran">(45)</span></p>
+                    </label>
+                    <label class="lebfl">
+                        <input type="checkbox">
+                        <p>256 GB <span class="spbran">(334)</span></p>
+                    </label>
+                    <label class="lebfl">
+                        <input type="checkbox">
+                        <p>512 GB <span class="spbran">(120)</span></p>
+                    </label>
+                    <a class="seeall" href="#">see all <svg width="13" height="8" viewBox="0 0 13 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L6.50002 6L12 1" stroke="#9F9F9F" stroke-width="2" stroke-linecap="round" />
+                        </svg></a>
+                </form>
+                <form class="class">
                     <h2>Color</h2>
-                    <ul>
-                        <li><a href="#">Blue (6)</a></li>
-                        <li><a href="#">Green (18)</a></li>
-                        <li><a href="#">Gray (74)</a></li>
-                        <li><a href="#">Black (45)</a></li>
-                        <li><a href="#">Silver (334)</a></li>
-                        <li><a href="#">Purple (120)</a></li>
-                    </ul>
-                    <a href="#">see all</a>
-                </div>
-                <div class="Screen diagonal">
+                    <label class="lebfl">
+                        <input type="checkbox">
+                        <p>Blue <span class="spbran">(6)</span></p>
+                    </label>
+                    <label class="lebfl">
+                        <input type="checkbox">
+                        <p>Green <span class="spbran">(18)</span></p>
+                    </label>
+                    <label class="lebfl">
+                        <input type="checkbox">
+                        <p>Gray <span class="spbran">(74)</span></p>
+                    </label>
+                    <label class="lebfl">
+                        <input type="checkbox">
+                        <p>Black <span class="spbran">(45)</span></p>
+                    </label>
+                    <label class="lebfl">
+                        <input type="checkbox">
+                        <p>Silver <span class="spbran">(334)</span></p>
+                    </label>
+                    <label class="lebfl">
+                        <input type="checkbox">
+                        <p>Purple <span class="spbran">(120)</span></p>
+                    </label>
+                    <a class="seeall" href="#">see all <svg width="13" height="8" viewBox="0 0 13 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L6.50002 6L12 1" stroke="#9F9F9F" stroke-width="2" stroke-linecap="round" />
+                        </svg></a>
+                </form>
+                <form class="class">
                     <h2>Screen diagonal</h2>
-                    <ul>
-                        <li><a href="#">4.59” (6)</a></li>
-                        <li><a href="#">4.6-5” (18)</a></li>
-                        <li><a href="#">5.01”-5.5” (74)</a></li>
-                        <li><a href="#">5.55”-6” (45)</a></li>
-                        <li><a href="#">6.01”-6.49” (334)</a></li>
-                        <li><a href="#">7” and more (120)</a></li>
-                    </ul>
-                    <a href="#">see all</a>
-                </div>
+                    <label class="lebfl">
+                        <input type="checkbox">
+                        <p>4.59” <span class="spbran">(6)</span></p>
+                    </label>
+                    <label class="lebfl">
+                        <input type="checkbox">
+                        <p>4.6-5” <span class="spbran">(18)</span></p>
+                    </label>
+                    <label class="lebfl">
+                        <input type="checkbox">
+                        <p>5.01”-5.5” <span class="spbran">(74)</span></p>
+                    </label>
+                    <label class="lebfl">
+                        <input type="checkbox">
+                        <p>5.55”-6” <span class="spbran">(45)</span></p>
+                    </label>
+                    <label class="lebfl">
+                        <input type="checkbox">
+                        <p>6.01”-6.49” <span class="spbran">(334)</span></p>
+                    </label>
+                    <label class="lebfl">
+                        <input type="checkbox">
+                        <p>7” and more <span class="spbran">(120)</span></p>
+                    </label>
+                    <a class="seeall" href="#">see all <svg width="13" height="8" viewBox="0 0 13 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L6.50002 6L12 1" stroke="#9F9F9F" stroke-width="2" stroke-linecap="round" />
+                        </svg></a>
+                </form>
                 <div class="baton-filter">
-                    <p>
-                        <a class="btn-dark" href="#">Apply filters</a>
-                        <a class="btn-white" href="#">Reset all filters</a>
-                    </p>
+                    <p><a class="btn-dark" href="#">Apply filters</a></p>
+                    <p><a class="btn-white" href="#">Reset all filters</a></p>
                 </div>
+                <p class="cancel">x</p>
             </div>
             <div class="cata-log wrapper">
-                <figure>
-                    <figcaption>
-                        <div class="card">
-                            <div>
-                                <picture>
-                                    <img src="img/iphonblue.png" alt="iPhone17pro">
-                                </picture>
-                                <h2>Смартфон Apple iPhone 17 Pro 256Gb Deep Blue</h2>
-                            </div>
-                            <div>
-                                <div class="pr item-centr ">
-                                    <p class="price">$ 1400</p>
-                                </div>
-                                <p>
-                                    <a class="btnbynow" href="#">Buy now</a>
-                                </p>
-                            </div>
+                <figure href="produkt.html">
+                    <div class="hurd"><a href="favourite.html"><svg class="serc" width="23" height="20"
+                                viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.6964 1.83918C18.6231 1.17018 17.3517 0.888134 16.0945 1.04021C14.8374 1.19229 13.6708 1.76927 12.7898 2.6747L11.5029 3.9355H11.4728L10.201 2.6747C9.31999 1.76927 8.15341 1.19229 6.89627 1.04021C5.63914 0.888134 4.36764 1.17018 3.29435 1.83918C2.66711 2.24347 2.13834 2.78187 1.74649 3.4152C1.35465 4.04853 1.10959 4.76085 1.02919 5.50032C0.948776 6.23978 1.03502 6.98778 1.28166 7.68989C1.52829 8.39199 1.9291 9.03054 2.45491 9.55905L11.4376 19L11.6185 18.8199L11.6739 18.8749L20.551 9.55905C21.0761 9.02952 21.4759 8.39009 21.7213 7.68734C21.9668 6.98458 22.0516 6.2362 21.9698 5.49667C21.8879 4.75714 21.6414 4.04511 21.2481 3.41239C20.8548 2.77968 20.3247 2.24223 19.6964 1.83918V1.83918Z"
+                                    stroke="#9F9F9F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></a>
+                    </div>
+                    <figcaption href="produkt.html">
+                        <div>
+                            <picture>
+                                <img src="img/iphonblue.png" alt="iPhone17pro">
+                            </picture>
+                            <h2>Смартфон Apple iPhone 17 Pro 256Gb Deep Blue</h2>
                         </div>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <figcaption>
-                        <div class="card">
-                            <div>
-                                <picture>
-                                    <img src="img/airpots.png" alt="AirPods">
-                                </picture>
-                                <h2>Навушники Apple AirPods Pro 3</h2>
-                            </div>
-                            <div>
-                                <div class="pr item-centr">
-                                    <p class="price">$ 340</p>
-                                </div>
-                                <p>
-                                    <a class="btnbynow" href="#">Buy now</a>
-                                </p>
-                            </div>
-                        </div>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <figcaption>
-                        <div class="card">
-                            <div>
-                                <picture>
-                                    <img src="img/mac.png" alt="MacBook">
-                                </picture>
-                                <h2>Компʼютер MacBook Air 13 Retina, Sky Blue, 256GB</h2>
-                            </div>
-                            <div>
-                                <div class="pr item-centr">
-                                    <p class="price">$ 1080</p>
-                                </div>
-                                <p>
-                                    <a class="btnbynow" href="#">Buy now</a>
-                                </p>
-                            </div>
-                        </div>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <figcaption>
-                        <div class="card">
-                            <div>
-                                <picture>
-                                    <img src="img/wathch.png" alt="Applewatch">
-                                </picture>
-                                <h2>Годинник Apple Watch Series 10 GPS, 46mm </h2>
-                            </div>
-                            <div>
-                                <div class="pr item-centr">
-                                    <p class="price">$ 430</p>
-                                </div>
-                                <p>
-                                    <a class="btnbynow" href="#">Buy now</a>
-                                </p>
-                            </div>
-                        </div>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <figcaption>
-                        <div class="card">
-                            <div>
-                                <picture>
-                                    <img src="img/ipad.png" alt="ipad">
-                                </picture>
-                                <h2>Планшет Apple iPad 11 128GB</h2>
-                            </div>
-
-                            <div class="pr item-centr">
-                                <p class="price">$ 275</p>
+                        <div>
+                            <div class="pr item-centr ">
+                                <p class="price">$ 1400</p>
                             </div>
                             <p>
-                                <a class="btnbynow" href="#">Buy now</a>
+                                <a class="btnbynow" href="produkt.html">Buy now</a>
                             </p>
                         </div>
+
                     </figcaption>
                 </figure>
                 <figure>
+                    <div class="hurd"><a href="favourite.html"><svg class="serc" width="23" height="20"
+                                viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.6964 1.83918C18.6231 1.17018 17.3517 0.888134 16.0945 1.04021C14.8374 1.19229 13.6708 1.76927 12.7898 2.6747L11.5029 3.9355H11.4728L10.201 2.6747C9.31999 1.76927 8.15341 1.19229 6.89627 1.04021C5.63914 0.888134 4.36764 1.17018 3.29435 1.83918C2.66711 2.24347 2.13834 2.78187 1.74649 3.4152C1.35465 4.04853 1.10959 4.76085 1.02919 5.50032C0.948776 6.23978 1.03502 6.98778 1.28166 7.68989C1.52829 8.39199 1.9291 9.03054 2.45491 9.55905L11.4376 19L11.6185 18.8199L11.6739 18.8749L20.551 9.55905C21.0761 9.02952 21.4759 8.39009 21.7213 7.68734C21.9668 6.98458 22.0516 6.2362 21.9698 5.49667C21.8879 4.75714 21.6414 4.04511 21.2481 3.41239C20.8548 2.77968 20.3247 2.24223 19.6964 1.83918V1.83918Z"
+                                    stroke="#9F9F9F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></a>
+                    </div>
                     <figcaption>
-                        <div class="card">
-                            <div>
-                                <picture>
-                                    <img src="img/iphon16.png" alt="iphon17">
-                                </picture>
-                                <h2>Смартфон Apple iPhone 17 256GB (White)</h2>
-                            </div>
 
+                        <div>
+                            <picture>
+                                <img src="img/airpots.png" alt="AirPods">
+                            </picture>
+                            <h2>Навушники Apple AirPods Pro 3</h2>
+                        </div>
+                        <div>
                             <div class="pr item-centr">
-                                <p class="price">$ 800</p>
+                                <p class="price">$ 340</p>
                             </div>
                             <p>
-                                <a class="btnbynow flax-centr" href="#">Buy now</a>
+                                <a class="btnbynow" href="produkt.html">Buy now</a>
                             </p>
-
                         </div>
+
                     </figcaption>
                 </figure>
                 <figure>
+                    <div class="hurd"><a href="favourite.html"><svg class="serc" width="23" height="20"
+                                viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.6964 1.83918C18.6231 1.17018 17.3517 0.888134 16.0945 1.04021C14.8374 1.19229 13.6708 1.76927 12.7898 2.6747L11.5029 3.9355H11.4728L10.201 2.6747C9.31999 1.76927 8.15341 1.19229 6.89627 1.04021C5.63914 0.888134 4.36764 1.17018 3.29435 1.83918C2.66711 2.24347 2.13834 2.78187 1.74649 3.4152C1.35465 4.04853 1.10959 4.76085 1.02919 5.50032C0.948776 6.23978 1.03502 6.98778 1.28166 7.68989C1.52829 8.39199 1.9291 9.03054 2.45491 9.55905L11.4376 19L11.6185 18.8199L11.6739 18.8749L20.551 9.55905C21.0761 9.02952 21.4759 8.39009 21.7213 7.68734C21.9668 6.98458 22.0516 6.2362 21.9698 5.49667C21.8879 4.75714 21.6414 4.04511 21.2481 3.41239C20.8548 2.77968 20.3247 2.24223 19.6964 1.83918V1.83918Z"
+                                    stroke="#9F9F9F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></a>
+                    </div>
                     <figcaption>
-                        <div class="card">
-                            <div>
-                                <picture>
-                                    <img src="img/imak.png" alt="imak">
-                                </picture>
-                                <h2>Монітор Apple iMac 24 with Retina 4.5K</h2>
-                            </div>
 
+                        <div>
+                            <picture>
+                                <img src="img/mac.png" alt="MacBook">
+                            </picture>
+                            <h2>Компʼютер MacBook Air 13 Retina, Sky Blue, 256GB</h2>
+                        </div>
+                        <div>
                             <div class="pr item-centr">
-                                <p class="price">$ 2900</p>
+                                <p class="price">$ 1080</p>
                             </div>
                             <p>
-                                <a class="btnbynow" href="#">Buy now</a>
+                                <a class="btnbynow" href="produkt.html">Buy now</a>
                             </p>
-
                         </div>
+
                     </figcaption>
                 </figure>
                 <figure>
+                    <div class="hurd"><a href="favourite.html"><svg class="serc" width="23" height="20"
+                                viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.6964 1.83918C18.6231 1.17018 17.3517 0.888134 16.0945 1.04021C14.8374 1.19229 13.6708 1.76927 12.7898 2.6747L11.5029 3.9355H11.4728L10.201 2.6747C9.31999 1.76927 8.15341 1.19229 6.89627 1.04021C5.63914 0.888134 4.36764 1.17018 3.29435 1.83918C2.66711 2.24347 2.13834 2.78187 1.74649 3.4152C1.35465 4.04853 1.10959 4.76085 1.02919 5.50032C0.948776 6.23978 1.03502 6.98778 1.28166 7.68989C1.52829 8.39199 1.9291 9.03054 2.45491 9.55905L11.4376 19L11.6185 18.8199L11.6739 18.8749L20.551 9.55905C21.0761 9.02952 21.4759 8.39009 21.7213 7.68734C21.9668 6.98458 22.0516 6.2362 21.9698 5.49667C21.8879 4.75714 21.6414 4.04511 21.2481 3.41239C20.8548 2.77968 20.3247 2.24223 19.6964 1.83918V1.83918Z"
+                                    stroke="#9F9F9F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></a>
+                    </div>
                     <figcaption>
-                        <div class="card">
-                            <div>
-                                <picture>
-                                    <img src="img/airmax.png" alt="airmax">
-                                </picture>
-                                <h2>Навушники Apple AirPods Max 2</h2>
-                            </div>
 
+                        <div>
+                            <picture>
+                                <img src="img/wathch.png" alt="Applewatch">
+                            </picture>
+                            <h2>Годинник Apple Watch Series 10 GPS, 46mm </h2>
+                        </div>
+                        <div>
                             <div class="pr item-centr">
-                                <p class="price">$ 990</p>
+                                <p class="price">$ 430</p>
                             </div>
                             <p>
-                                <a class="btnbynow" href="#">Buy now</a>
+                                <a class="btnbynow" href="produkt.html">Buy now</a>
                             </p>
                         </div>
+
                     </figcaption>
                 </figure>
                 <figure>
+                    <div class="hurd"><a href="favourite.html"><svg class="serc" width="23" height="20"
+                                viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.6964 1.83918C18.6231 1.17018 17.3517 0.888134 16.0945 1.04021C14.8374 1.19229 13.6708 1.76927 12.7898 2.6747L11.5029 3.9355H11.4728L10.201 2.6747C9.31999 1.76927 8.15341 1.19229 6.89627 1.04021C5.63914 0.888134 4.36764 1.17018 3.29435 1.83918C2.66711 2.24347 2.13834 2.78187 1.74649 3.4152C1.35465 4.04853 1.10959 4.76085 1.02919 5.50032C0.948776 6.23978 1.03502 6.98778 1.28166 7.68989C1.52829 8.39199 1.9291 9.03054 2.45491 9.55905L11.4376 19L11.6185 18.8199L11.6739 18.8749L20.551 9.55905C21.0761 9.02952 21.4759 8.39009 21.7213 7.68734C21.9668 6.98458 22.0516 6.2362 21.9698 5.49667C21.8879 4.75714 21.6414 4.04511 21.2481 3.41239C20.8548 2.77968 20.3247 2.24223 19.6964 1.83918V1.83918Z"
+                                    stroke="#9F9F9F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></a>
+                    </div>
                     <figcaption>
-                        <div class="card">
-                            <div>
-                                <picture>
-                                    <img src="img/iphongold.png" alt="iPhone13">
-                                </picture>
-                                <h2>Смартфон iPhone 13 Pro 128GB</h2>
-                            </div>
-
-                            <div class="pr item-centr">
-                                <p class="price">$ 300</p>
-                                <p class="price-50">$ 600</p>
-                            </div>
-                            <p>
-                                <a class="btnbynow" href="#">Buy now</a>
-                            </p>
+                        <div>
+                            <picture>
+                                <img src="img/ipad.png" alt="ipad">
+                            </picture>
+                            <h2>Планшет Apple iPad 11 128GB</h2>
                         </div>
+                        <div class="pr item-centr">
+                            <p class="price">$ 275</p>
+                        </div>
+                        <p>
+                            <a class="btnbynow" href="#">Buy now</a>
+                        </p>
+
                     </figcaption>
                 </figure>
                 <figure>
+                    <div class="hurd"><a href="favourite.html"><svg class="serc" width="23" height="20"
+                                viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.6964 1.83918C18.6231 1.17018 17.3517 0.888134 16.0945 1.04021C14.8374 1.19229 13.6708 1.76927 12.7898 2.6747L11.5029 3.9355H11.4728L10.201 2.6747C9.31999 1.76927 8.15341 1.19229 6.89627 1.04021C5.63914 0.888134 4.36764 1.17018 3.29435 1.83918C2.66711 2.24347 2.13834 2.78187 1.74649 3.4152C1.35465 4.04853 1.10959 4.76085 1.02919 5.50032C0.948776 6.23978 1.03502 6.98778 1.28166 7.68989C1.52829 8.39199 1.9291 9.03054 2.45491 9.55905L11.4376 19L11.6185 18.8199L11.6739 18.8749L20.551 9.55905C21.0761 9.02952 21.4759 8.39009 21.7213 7.68734C21.9668 6.98458 22.0516 6.2362 21.9698 5.49667C21.8879 4.75714 21.6414 4.04511 21.2481 3.41239C20.8548 2.77968 20.3247 2.24223 19.6964 1.83918V1.83918Z"
+                                    stroke="#9F9F9F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></a>
+                    </div>
                     <figcaption>
-                        <div class="card">
-                            <div>
-                                <picture>
-                                    <img src="img/sunpanel.png" alt="starlink">
-                                </picture>
-                                <h2>Супутниковий модем Starlink Internet Satellite</h2>
-                            </div>
-
-                            <div class="pr item-centr">
-                                <p class="price">$ 550</p>
-                                <p class="price-50">$ 1100</p>
-                            </div>
-                            <p>
-                                <a class="btnbynow" href="#">Buy now</a>
-                            </p>
+                        <div>
+                            <picture>
+                                <img src="img/iphon16.png" alt="iphon17">
+                            </picture>
+                            <h2>Смартфон Apple iPhone 17 256GB (White)</h2>
                         </div>
+                        <div class="pr item-centr">
+                            <p class="price">$ 800</p>
+                        </div>
+                        <p>
+                            <a class="btnbynow flax-centr" href="#">Buy now</a>
+                        </p>
                     </figcaption>
                 </figure>
                 <figure>
+                    <div class="hurd"><a href="favourite.html"><svg class="serc" width="23" height="20"
+                                viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.6964 1.83918C18.6231 1.17018 17.3517 0.888134 16.0945 1.04021C14.8374 1.19229 13.6708 1.76927 12.7898 2.6747L11.5029 3.9355H11.4728L10.201 2.6747C9.31999 1.76927 8.15341 1.19229 6.89627 1.04021C5.63914 0.888134 4.36764 1.17018 3.29435 1.83918C2.66711 2.24347 2.13834 2.78187 1.74649 3.4152C1.35465 4.04853 1.10959 4.76085 1.02919 5.50032C0.948776 6.23978 1.03502 6.98778 1.28166 7.68989C1.52829 8.39199 1.9291 9.03054 2.45491 9.55905L11.4376 19L11.6185 18.8199L11.6739 18.8749L20.551 9.55905C21.0761 9.02952 21.4759 8.39009 21.7213 7.68734C21.9668 6.98458 22.0516 6.2362 21.9698 5.49667C21.8879 4.75714 21.6414 4.04511 21.2481 3.41239C20.8548 2.77968 20.3247 2.24223 19.6964 1.83918V1.83918Z"
+                                    stroke="#9F9F9F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></a>
+                    </div>
                     <figcaption>
-                        <div class="card">
-                            <div>
-                                <picture>
-                                    <img src="img/playstat.png" alt="PlayStation">
-                                </picture>
-                                <h2>Ігрова приставка Sony PlayStation 5 Pro</h2>
-                            </div>
-
-                            <div class="pr item-centr">
-                                <p class="price">$ 600</p>
-                                <p class="price-50">$ 1200</p>
-                            </div>
-                            <p>
-                                <a class="btnbynow" href="#">Buy now</a>
-                            </p>
+                        <div>
+                            <picture>
+                                <img src="img/imak.png" alt="imak">
+                            </picture>
+                            <h2>Монітор Apple iMac 24 with Retina 4.5K</h2>
                         </div>
+
+                        <div class="pr item-centr">
+                            <p class="price">$ 2900</p>
+                        </div>
+                        <p>
+                            <a class="btnbynow" href="#">Buy now</a>
+                        </p>
+
+
                     </figcaption>
                 </figure>
                 <figure>
+                    <div class="hurd"><a href="favourite.html"><svg class="serc" width="23" height="20"
+                                viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.6964 1.83918C18.6231 1.17018 17.3517 0.888134 16.0945 1.04021C14.8374 1.19229 13.6708 1.76927 12.7898 2.6747L11.5029 3.9355H11.4728L10.201 2.6747C9.31999 1.76927 8.15341 1.19229 6.89627 1.04021C5.63914 0.888134 4.36764 1.17018 3.29435 1.83918C2.66711 2.24347 2.13834 2.78187 1.74649 3.4152C1.35465 4.04853 1.10959 4.76085 1.02919 5.50032C0.948776 6.23978 1.03502 6.98778 1.28166 7.68989C1.52829 8.39199 1.9291 9.03054 2.45491 9.55905L11.4376 19L11.6185 18.8199L11.6739 18.8749L20.551 9.55905C21.0761 9.02952 21.4759 8.39009 21.7213 7.68734C21.9668 6.98458 22.0516 6.2362 21.9698 5.49667C21.8879 4.75714 21.6414 4.04511 21.2481 3.41239C20.8548 2.77968 20.3247 2.24223 19.6964 1.83918V1.83918Z"
+                                    stroke="#9F9F9F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></a>
+                    </div>
                     <figcaption>
-                        <div class="card">
-                            <div>
-                                <picture>
-                                    <img class="fleshka" src="img/fleshka.png" alt="fleshka">
-                                </picture>
-                                <h2>Флеш-накопичувач SanDisk USB 3.1 iXpand Luxe</h2>
-                            </div>
 
-                            <div class="pr item-centr">
-                                <p class="price">$ 30 </p>
-                                <p class="price-50">$ 60</p>
-                            </div>
-                            <p>
-                                <a class="btnbynow" href="#">Buy now</a>
-                            </p>
+                        <div>
+                            <picture>
+                                <img src="img/airmax.png" alt="airmax">
+                            </picture>
+                            <h2>Навушники Apple AirPods Max 2</h2>
                         </div>
+
+                        <div class="pr item-centr">
+                            <p class="price">$ 990</p>
+                        </div>
+                        <p>
+                            <a class="btnbynow" href="#">Buy now</a>
+                        </p>
+
+                    </figcaption>
+                </figure>
+                <figure>
+                    <div class="hurd"><a href="favourite.html"><svg class="serc" width="23" height="20"
+                                viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.6964 1.83918C18.6231 1.17018 17.3517 0.888134 16.0945 1.04021C14.8374 1.19229 13.6708 1.76927 12.7898 2.6747L11.5029 3.9355H11.4728L10.201 2.6747C9.31999 1.76927 8.15341 1.19229 6.89627 1.04021C5.63914 0.888134 4.36764 1.17018 3.29435 1.83918C2.66711 2.24347 2.13834 2.78187 1.74649 3.4152C1.35465 4.04853 1.10959 4.76085 1.02919 5.50032C0.948776 6.23978 1.03502 6.98778 1.28166 7.68989C1.52829 8.39199 1.9291 9.03054 2.45491 9.55905L11.4376 19L11.6185 18.8199L11.6739 18.8749L20.551 9.55905C21.0761 9.02952 21.4759 8.39009 21.7213 7.68734C21.9668 6.98458 22.0516 6.2362 21.9698 5.49667C21.8879 4.75714 21.6414 4.04511 21.2481 3.41239C20.8548 2.77968 20.3247 2.24223 19.6964 1.83918V1.83918Z"
+                                    stroke="#9F9F9F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></a>
+                    </div>
+                    <figcaption>
+
+                        <div>
+                            <picture>
+                                <img src="img/iphongold.png" alt="iPhone13">
+                            </picture>
+                            <h2>Смартфон iPhone 13 Pro 128GB</h2>
+                        </div>
+
+                        <div class="pr item-centr">
+                            <p class="price">$ 300</p>
+                            <p class="price-50">$ 600</p>
+                        </div>
+                        <p>
+                            <a class="btnbynow" href="#">Buy now</a>
+                        </p>
+
+                    </figcaption>
+                </figure>
+                <figure>
+                    <div class="hurd"><a href="favourite.html"><svg class="serc" width="23" height="20"
+                                viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.6964 1.83918C18.6231 1.17018 17.3517 0.888134 16.0945 1.04021C14.8374 1.19229 13.6708 1.76927 12.7898 2.6747L11.5029 3.9355H11.4728L10.201 2.6747C9.31999 1.76927 8.15341 1.19229 6.89627 1.04021C5.63914 0.888134 4.36764 1.17018 3.29435 1.83918C2.66711 2.24347 2.13834 2.78187 1.74649 3.4152C1.35465 4.04853 1.10959 4.76085 1.02919 5.50032C0.948776 6.23978 1.03502 6.98778 1.28166 7.68989C1.52829 8.39199 1.9291 9.03054 2.45491 9.55905L11.4376 19L11.6185 18.8199L11.6739 18.8749L20.551 9.55905C21.0761 9.02952 21.4759 8.39009 21.7213 7.68734C21.9668 6.98458 22.0516 6.2362 21.9698 5.49667C21.8879 4.75714 21.6414 4.04511 21.2481 3.41239C20.8548 2.77968 20.3247 2.24223 19.6964 1.83918V1.83918Z"
+                                    stroke="#9F9F9F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></a>
+                    </div>
+                    <figcaption>
+
+                        <div>
+                            <picture>
+                                <img src="img/sunpanel.png" alt="starlink">
+                            </picture>
+                            <h2>Супутниковий модем Starlink Internet Satellite</h2>
+                        </div>
+
+                        <div class="pr item-centr">
+                            <p class="price">$ 550</p>
+                            <p class="price-50">$ 1100</p>
+                        </div>
+                        <p>
+                            <a class="btnbynow" href="#">Buy now</a>
+                        </p>
+
+                    </figcaption>
+                </figure>
+                <figure>
+                    <div class="hurd"><a href="favourite.html"><svg class="serc" width="23" height="20"
+                                viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.6964 1.83918C18.6231 1.17018 17.3517 0.888134 16.0945 1.04021C14.8374 1.19229 13.6708 1.76927 12.7898 2.6747L11.5029 3.9355H11.4728L10.201 2.6747C9.31999 1.76927 8.15341 1.19229 6.89627 1.04021C5.63914 0.888134 4.36764 1.17018 3.29435 1.83918C2.66711 2.24347 2.13834 2.78187 1.74649 3.4152C1.35465 4.04853 1.10959 4.76085 1.02919 5.50032C0.948776 6.23978 1.03502 6.98778 1.28166 7.68989C1.52829 8.39199 1.9291 9.03054 2.45491 9.55905L11.4376 19L11.6185 18.8199L11.6739 18.8749L20.551 9.55905C21.0761 9.02952 21.4759 8.39009 21.7213 7.68734C21.9668 6.98458 22.0516 6.2362 21.9698 5.49667C21.8879 4.75714 21.6414 4.04511 21.2481 3.41239C20.8548 2.77968 20.3247 2.24223 19.6964 1.83918V1.83918Z"
+                                    stroke="#9F9F9F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></a>
+                    </div>
+                    <figcaption>
+
+                        <div>
+                            <picture>
+                                <img src="img/playstat.png" alt="PlayStation">
+                            </picture>
+                            <h2>Ігрова приставка Sony PlayStation 5 Pro</h2>
+                        </div>
+
+                        <div class="pr item-centr">
+                            <p class="price">$ 600</p>
+                            <p class="price-50">$ 1200</p>
+                        </div>
+                        <p>
+                            <a class="btnbynow" href="#">Buy now</a>
+                        </p>
+
+                    </figcaption>
+                </figure>
+                <figure>
+                    <div class="hurd"><a href="favourite.html"><svg class="serc" width="23" height="20"
+                                viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.6964 1.83918C18.6231 1.17018 17.3517 0.888134 16.0945 1.04021C14.8374 1.19229 13.6708 1.76927 12.7898 2.6747L11.5029 3.9355H11.4728L10.201 2.6747C9.31999 1.76927 8.15341 1.19229 6.89627 1.04021C5.63914 0.888134 4.36764 1.17018 3.29435 1.83918C2.66711 2.24347 2.13834 2.78187 1.74649 3.4152C1.35465 4.04853 1.10959 4.76085 1.02919 5.50032C0.948776 6.23978 1.03502 6.98778 1.28166 7.68989C1.52829 8.39199 1.9291 9.03054 2.45491 9.55905L11.4376 19L11.6185 18.8199L11.6739 18.8749L20.551 9.55905C21.0761 9.02952 21.4759 8.39009 21.7213 7.68734C21.9668 6.98458 22.0516 6.2362 21.9698 5.49667C21.8879 4.75714 21.6414 4.04511 21.2481 3.41239C20.8548 2.77968 20.3247 2.24223 19.6964 1.83918V1.83918Z"
+                                    stroke="#9F9F9F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></a>
+                    </div>
+                    <figcaption>
+
+                        <div>
+                            <picture>
+                                <img class="fleshka" src="img/fleshka.png" alt="fleshka">
+                            </picture>
+                            <h2>Флеш-накопичувач SanDisk USB 3.1 iXpand Luxe</h2>
+                        </div>
+
+                        <div class="pr item-centr">
+                            <p class="price">$ 30 </p>
+                            <p class="price-50">$ 60</p>
+                        </div>
+                        <p>
+                            <a class="btnbynow" href="#">Buy now</a>
+                        </p>
+
                     </figcaption>
                 </figure>
             </div>
+        </div>
+        <div class="pages">
+            <a href="#"><svg width="51" height="15" viewBox="0 0 51 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.292892 8.07112C-0.0976295 7.6806 -0.0976295 7.04743 0.292892 6.65691L6.65685 0.292946C7.04738 -0.0975785 7.68054 -0.0975785 8.07107 0.292946C8.46159 0.68347 8.46159 1.31664 8.07107 1.70716L2.41422 7.36401L8.07107 13.0209C8.46159 13.4114 8.46159 14.0446 8.07107 14.4351C7.68054 14.8256 7.04738 14.8256 6.65685 14.4351L0.292892 8.07112ZM51 7.36401V8.36401H1V7.36401V6.36401H51V7.36401Z"
+                        fill="#9F9F9F" />
+                </svg>
+            </a>
+            <ul class="numberpag">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">...</a></li>
+                <li><a href="#">23</a></li>
+            </ul>
+            <a href="#"><svg width="51" height="15" viewBox="0 0 51 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M50.7071 8.07112C51.0976 7.6806 51.0976 7.04743 50.7071 6.65691L44.3431 0.292946C43.9526 -0.0975785 43.3195 -0.0975785 42.9289 0.292946C42.5384 0.68347 42.5384 1.31664 42.9289 1.70716L48.5858 7.36401L42.9289 13.0209C42.5384 13.4114 42.5384 14.0446 42.9289 14.4351C43.3195 14.8256 43.9526 14.8256 44.3431 14.4351L50.7071 8.07112ZM0 7.36401V8.36401H50V7.36401V6.36401H0V7.36401Z"
+                        fill="#9F9F9F" />
+                </svg>
+
+            </a>
         </div>
     </main>
     <footer>
@@ -450,6 +626,25 @@
         </div>
         <p class="year ">© Copyright by Cyber 2020-2026</p>
     </footer>
+    <script>
+        const dark = document.querySelector(".dark-bgc"),
+            burger = document.querySelector(".burger"),
+            menu = document.querySelector(".menu"),
+            cancel = document.querySelector(".cancel")
+
+        burger.addEventListener("click", function () {
+            menu.style.left = "0";
+            dark.style.display = "block"
+        })
+
+        function cancelBurger() {
+            menu.style.left = "-100%";
+            dark.style.display = "none"
+        }
+        cancel.addEventListener("click", cancelBurger)
+        dark.addEventListener("click", cancelBurger)
+    </script>
+
 </body>
 
 </html>

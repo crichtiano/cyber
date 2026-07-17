@@ -757,6 +757,7 @@ figure h2 {
     padding: 18rem;
     border-radius: 5rem;
     cursor: url("/img/aplecotcebtn"), pointer;
+    width: 100%;
 }
 
 .btn-white {
@@ -769,6 +770,7 @@ figure h2 {
     border-radius: 5rem;
     border: 1rem solid rgba(23, 23, 23, 1);
     cursor: url("/img/aplecotcebtn"), pointer;
+    width: 100%;
 }
 
 .flax-between {
@@ -882,8 +884,7 @@ figure h2 {
 
 
 .filter {
-    display: grid;
-    grid-template-columns: 20% 80%;
+    display: block;
 }
 
 .vibor li {
@@ -904,13 +905,128 @@ figure h2 {
     font-size: 28rem;
     font-weight: 600;
 }
+.cata-log figure {
+    background: #F1F1F1;
+    border-radius: 8rem;
+    text-align: center;
+    padding: 27rem 24rem 38rem;
+    margin: 0;
+    transition: .5s;
+    cursor: url("/img/aplecotcebtn"), pointer;
+}
+.cata-log{
+    grid-template-columns: repeat(2, 1fr);
+}
+.cata-log figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
 
+picture {
+    display: inline-block;
+    min-height: 150rem;
+}
 
-
-
-
-
-
+.cata-log img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.lebfl{
+    display: flex;
+    gap: 15rem;
+    padding-bottom: 15rem;
+}
+.lebfl p{
+    font-size: 18rem;
+    font-weight: 400;
+}
+.lebfl input{
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #9F9F9F;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.lebfl input:checked{
+    background: #000000;
+    border: #000000;
+}
+.spbran{
+    color: #9F9F9F;
+}
+.seeall{
+    color: #9F9F9F;
+    text-decoration: underline;
+}
+.class{
+    padding: 30rem 0;
+}
+.class:after{
+    content: "";
+    width: 100%;
+    padding: 30rem;
+    display: block;
+    border-bottom: 1px solid #F1F1F1;
+}
+.baton-filter{
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+.filmen{
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+}
+.vibor{
+    position: fixed;
+    left: -100%;
+    top: 0;
+    gap: 20px;
+    height: 100vh;
+    width: 70vw;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    padding: 50rem 15px;
+    background-color: #ffffffea;
+    transition: 1s;
+}
+.pricemin{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.pricemin input{
+    appearance: none;
+    width: 180rem;
+    height: 50rem;
+    border: 1px solid #F1F1F1;
+    border-radius: 5px;
+    text-align: center;
+}
+.pricemin placeholder{
+    color: #9F9F9F;
+    font-size: 24rem;
+}
+.pages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 0 100rem 0;
+}
+.numberpag{
+    display: flex;
+}
+.numberpag a{
+    font-size: 24rem;
+}
 
 
 .blog {
@@ -1560,7 +1676,19 @@ iframe {
         width: 100%;
         max-width: 1140rem;
     }
-
+    .vibor {
+        position: static;
+        width: 230rem;
+        background-color: transparent;
+    }
+    .cata-log{
+    grid-template-columns: repeat(3, 1fr);
+}
+    .filter {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 20px;
+}
     .menu {
         position: static;
         width: 500rem;
@@ -1572,6 +1700,9 @@ iframe {
         align-items: center;
         background-color: white;
 
+    }
+    .fil{
+        display: none;
     }
     .burger,
     .cancel {
@@ -1607,6 +1738,7 @@ iframe {
         gap: 71rem;
         padding: 0 0 100rem 0;
     }
+    
     .menu {
         position: static;
         width: 500rem;
@@ -1779,6 +1911,10 @@ iframe {
 @media screen and (min-width:1440px) {
     html {
         font-size: .8px;
+    }
+    .pricemin{
+        display: flex;
+        flex-direction: row;
     }
 }
 
