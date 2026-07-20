@@ -229,6 +229,13 @@ a {
     overflow: scroll;
 
 }
+.cance{
+    position: absolute;
+    left: 90%;
+    top: 0%;
+    z-index: 3;
+    font-size: 60rem;
+}
 
 .main-catalog svg {
     display: none;
@@ -936,6 +943,7 @@ picture {
 }
 .lebfl{
     display: flex;
+    align-items: center;
     gap: 15rem;
     padding-bottom: 15rem;
 }
@@ -987,8 +995,8 @@ picture {
     left: -100%;
     top: 0;
     gap: 20px;
-    height: 100vh;
-    width: 70vw;
+    height: 90vh;
+    width: 80vw;
     z-index: 3;
     display: flex;
     flex-direction: column;
@@ -996,6 +1004,7 @@ picture {
     padding: 50rem 15px;
     background-color: #ffffffea;
     transition: 1s;
+    overflow-x: scroll;
 }
 .pricemin{
     display: flex;
@@ -1680,7 +1689,13 @@ iframe {
         position: static;
         width: 230rem;
         background-color: transparent;
+        overflow: visible;
+        padding-bottom: 15rem;
     }
+    .cance{
+        display: none;
+    }
+
     .cata-log{
     grid-template-columns: repeat(3, 1fr);
 }

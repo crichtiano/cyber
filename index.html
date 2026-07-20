@@ -6,6 +6,7 @@
     <meta name="viewport"
         content="width=device-width,user-scaleble=yes,initial-scale=1.0,maximum-scale=2.0,minimum-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+
     <title>E-com Cyber the best shop ever where you been to </title>
 </head>
 
@@ -537,24 +538,7 @@
         </div>
         <p class="year ">© Copyright by Cyber 2020-2026</p>
     </footer>
-    <script>
-        const dark = document.querySelector(".dark-bgc"),
-            burger = document.querySelector(".burger"),
-            menu = document.querySelector(".menu"),
-            cancel = document.querySelector(".cancel")
-
-        burger.addEventListener("click", function () {
-            menu.style.left = "0";
-            dark.style.display = "block"
-        })
-
-        function cancelBurger() {
-            menu.style.left = "-100%";
-            dark.style.display = "none"
-        }
-        cancel.addEventListener("click", cancelBurger)
-        dark.addEventListener("click", cancelBurger)
-    </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

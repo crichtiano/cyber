@@ -228,7 +228,7 @@
                     <p><a class="btn-dark" href="#">Apply filters</a></p>
                     <p><a class="btn-white" href="#">Reset all filters</a></p>
                 </div>
-                <p class="cancel">x</p>
+                <p class="cance">x</p>
             </div>
             <div class="cata-log wrapper">
                 <figure href="produkt.html">
@@ -555,11 +555,11 @@
                 </svg>
             </a>
             <ul class="numberpag">
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">...</a></li>
-                <li><a href="#">23</a></li>
+                <li><a class="activ" href="#">1</a></li>
+                <li><a class="kn" href="#">2</a></li>
+                <li><a class="kn" href="#">3</a></li>
+                <li><a class="kn" href="#">...</a></li>
+                <li><a class="kn" href="#">23</a></li>
             </ul>
             <a href="#"><svg width="51" height="15" viewBox="0 0 51 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -626,24 +626,7 @@
         </div>
         <p class="year ">© Copyright by Cyber 2020-2026</p>
     </footer>
-    <script>
-        const dark = document.querySelector(".dark-bgc"),
-            burger = document.querySelector(".burger"),
-            menu = document.querySelector(".menu"),
-            cancel = document.querySelector(".cancel")
-
-        burger.addEventListener("click", function () {
-            menu.style.left = "0";
-            dark.style.display = "block"
-        })
-
-        function cancelBurger() {
-            menu.style.left = "-100%";
-            dark.style.display = "none"
-        }
-        cancel.addEventListener("click", cancelBurger)
-        dark.addEventListener("click", cancelBurger)
-    </script>
+    <script src="js/script.js"></script>
 
 </body>
 
