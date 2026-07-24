@@ -972,13 +972,7 @@ picture {
 }
 .class{
     padding: 30rem 0;
-}
-.class:after{
-    content: "";
-    width: 100%;
-    padding: 30rem;
-    display: block;
-    border-bottom: 1px solid #F1F1F1;
+    border-bottom: 1px solid #f1f1f1;
 }
 .baton-filter{
     display: flex;
@@ -986,16 +980,20 @@ picture {
     gap: 10rem;
 }
 .filmen{
-    display: inline-block;
+    display: flex;
+    align-items: center;
     width: 25px;
     height: 20px;
+}
+.filmen p{
+    font-size: 30rem;
 }
 .vibor{
     position: fixed;
     left: -100%;
     top: 0;
     gap: 20px;
-    height: 90vh;
+    height: 100vh;
     width: 80vw;
     z-index: 3;
     display: flex;
@@ -1687,7 +1685,7 @@ iframe {
     }
     .vibor {
         position: static;
-        width: 230rem;
+        width: 100%;
         background-color: transparent;
         overflow: visible;
         padding-bottom: 15rem;
