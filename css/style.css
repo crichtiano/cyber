@@ -765,6 +765,7 @@ figure h2 {
     border-radius: 5rem;
     cursor: url("/img/aplecotcebtn"), pointer;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .btn-white {
@@ -778,6 +779,7 @@ figure h2 {
     border: 1rem solid rgba(23, 23, 23, 1);
     cursor: url("/img/aplecotcebtn"), pointer;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .flax-between {
@@ -971,7 +973,7 @@ picture {
     text-decoration: underline;
 }
 .class{
-    padding: 30rem 0;
+    padding-bottom: 40rem;
     border-bottom: 1px solid #f1f1f1;
 }
 .baton-filter{
@@ -982,6 +984,7 @@ picture {
 .filmen{
     display: flex;
     align-items: center;
+    padding: 20rem 0;
     width: 25px;
     height: 20px;
 }
@@ -1006,12 +1009,11 @@ picture {
 }
 .pricemin{
     display: flex;
-    flex-direction: column;
     gap: 15px;
 }
 .pricemin input{
     appearance: none;
-    width: 180rem;
+    width: 100%;
     height: 50rem;
     border: 1px solid #F1F1F1;
     border-radius: 5px;
@@ -1034,7 +1036,6 @@ picture {
 .numberpag a{
     font-size: 24rem;
 }
-
 
 .blog {
     display: grid;
@@ -1688,7 +1689,7 @@ iframe {
         width: 100%;
         background-color: transparent;
         overflow: visible;
-        padding-bottom: 15rem;
+        padding: 0;
     }
     .cance{
         display: none;
