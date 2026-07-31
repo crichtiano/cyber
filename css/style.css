@@ -229,7 +229,8 @@ a {
     overflow: scroll;
 
 }
-.cance{
+
+.cance {
     position: absolute;
     left: 90%;
     top: 0%;
@@ -431,6 +432,111 @@ picture img .textvis {
     display: none;
 }
 
+.popup {
+    position: absolute;
+    left: -100%;
+    z-index: 1000;
+    width: 450px;
+    height: 100vh;
+}
+
+.popup-content {
+    background: white;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 515rem;
+    padding: 25px;
+}
+
+.conlog {
+    padding: 25rem 0 20rem 0;
+}
+
+.forgot {
+    display: block;
+    padding: 15rem 0 30rem 0;
+}
+
+.close {
+    position: absolute;
+    right: -15%;
+    top: 0%;
+    font-size: 28px;
+    align-items: center;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+}
+
+.tabs a {
+    width: 50%;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    font-size: 20rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.tabs a.active {
+    background: #171717;
+    color: white;
+    font-size: 20rem;
+}
+
+.btn-log {
+    font-size: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(23, 23, 23, 1);
+    padding: 18rem;
+    border-radius: 5rem;
+    cursor: url("/img/aplecotcebtn"), pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logled {
+    font-weight: 400;
+    font-size: 18rem;
+    text-decoration: none;
+}
+
+.forgot {
+    font-weight: 400;
+    font-size: 16rem;
+    text-decoration: underline;
+    color: #9F9F9F;
+}
+
+.form {
+    display: none;
+}
+
+.form.active {
+    display: block;
+}
+
+.form label {
+    display: block;
+}
+
+.form input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #9F9F9F;
+}
+
 .spann {
     position: absolute;
     display: block;
@@ -516,15 +622,18 @@ figure h2 {
     font-weight: 500;
     font-size: 24rem;
 }
-.hurd{
+
+.hurd {
     position: relative;
 }
-.serc{
+
+.serc {
     position: absolute;
     left: 90%;
     width: 25rem;
     height: 20rem;
 }
+
 .price {
     text-align: center;
     font-weight: Bold;
@@ -551,7 +660,7 @@ figure h2 {
     border: 4rem solid transparent;
 }
 
-.active {
+.activee {
     color: #171717;
     text-decoration: underline;
 }
@@ -914,6 +1023,7 @@ figure h2 {
     font-size: 28rem;
     font-weight: 600;
 }
+
 .cata-log figure {
     background: #F1F1F1;
     border-radius: 8rem;
@@ -923,9 +1033,11 @@ figure h2 {
     transition: .5s;
     cursor: url("/img/aplecotcebtn"), pointer;
 }
-.cata-log{
+
+.cata-log {
     grid-template-columns: repeat(2, 1fr);
 }
+
 .cata-log figcaption {
     display: flex;
     flex-direction: column;
@@ -943,17 +1055,20 @@ picture {
     height: 100%;
     object-fit: cover;
 }
-.lebfl{
+
+.lebfl {
     display: flex;
     align-items: center;
     gap: 15rem;
     padding-bottom: 15rem;
 }
-.lebfl p{
+
+.lebfl p {
     font-size: 18rem;
     font-weight: 400;
 }
-.lebfl input{
+
+.lebfl input {
     appearance: none;
     width: 22px;
     height: 22px;
@@ -961,37 +1076,49 @@ picture {
     border-radius: 3px;
     cursor: pointer;
 }
-.lebfl input:checked{
+
+.lebfl input:checked {
     background: #000000;
     border: #000000;
 }
-.spbran{
+
+.spbran {
     color: #9F9F9F;
 }
-.seeall{
+
+.seeall {
     color: #9F9F9F;
     text-decoration: underline;
 }
-.class{
+
+.class {
     padding-bottom: 40rem;
     border-bottom: 1px solid #f1f1f1;
 }
-.baton-filter{
+
+.class h2 {
+    padding-bottom: 20rem;
+}
+
+.baton-filter {
     display: flex;
     flex-direction: column;
     gap: 10rem;
 }
-.filmen{
+
+.filmen {
     display: flex;
     align-items: center;
     padding: 20rem 0;
     width: 25px;
     height: 20px;
 }
-.filmen p{
+
+.filmen p {
     font-size: 30rem;
 }
-.vibor{
+
+.vibor {
     position: fixed;
     left: -100%;
     top: 0;
@@ -1006,12 +1133,15 @@ picture {
     background-color: #ffffffea;
     transition: 1s;
     overflow-x: scroll;
+    box-sizing: border-box;
 }
-.pricemin{
+
+.pricemin {
     display: flex;
     gap: 15px;
 }
-.pricemin input{
+
+.pricemin input {
     appearance: none;
     width: 100%;
     height: 50rem;
@@ -1019,22 +1149,203 @@ picture {
     border-radius: 5px;
     text-align: center;
 }
-.pricemin placeholder{
+
+.pricemin placeholder {
     color: #9F9F9F;
     font-size: 24rem;
 }
-.pages{
+
+.pages {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
     padding: 40px 0 100rem 0;
 }
-.numberpag{
+
+.numberpag {
     display: flex;
 }
-.numberpag a{
+
+.numberpag a {
     font-size: 24rem;
+}
+
+
+.towbask {
+    display: grid;
+    gap: 40rem;
+    padding-bottom: 100rem;
+}
+
+.conkupib {
+    display: flex;
+    justify-content: center;
+}
+
+.kupib {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    max-height: 580rem;
+    width: 100%;
+    max-width: 490rem;
+    padding: 35rem 40rem;
+    border-radius: 10px;
+    border: 1px solid #333;
+    flex-direction: column;
+}
+
+.primo-con {
+    padding: 30rem 0 25rem 0;
+}
+
+.prices {
+    padding: 30rem 0 40rem 0;
+}
+
+.h3bask {
+    font-weight: 500;
+    font-size: 18rem;
+    padding-bottom: 20rem;
+}
+
+.pbask {
+    font-weight: 500;
+    font-size: 14rem;
+    color: #9F9F9F;
+}
+
+.pbask2 {
+    padding-bottom: 15rem;
+}
+
+.spanba {
+    color: #171717;
+}
+
+.bskpr {
+    font-weight: 600;
+    font-size: 30rem;
+    color: #171717;
+}
+
+.towar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.prod {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F1F1F1;
+    border-radius: 8px;
+    padding: 30rem;
+}
+
+.num {
+    width: 25rem;
+    text-align: center;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.plu,
+.min {
+    color: #9F9F9F;
+    width: 26rem;
+    height: 20rem;
+    background-color: transparent;
+    border: 1px solid #9F9F9F;
+    border-radius: 3px;
+}
+
+.kupih1 {
+    font-weight: 500;
+    font-size: 28rem;
+    color: #171717;
+}
+
+.promo {
+    font-weight: 400;
+    font-size: 18rem;
+    color: #171717;
+    padding-bottom: 10rem;
+}
+
+.prih2 {
+    font-weight: 500;
+    font-size: 24rem;
+}
+
+.prih2cin {
+    font-weight: 600;
+    font-size: 26rem;
+}
+
+.pripcin {
+    font-weight: 500;
+    font-size: 24rem;
+}
+
+.prip {
+    font-weight: 400;
+    font-size: 18px;
+    color: #9F9F9F;
+}
+
+.kupib input {
+    outline: none;
+    width: 100%;
+    height: 50rem;
+    border: 1px solid #9F9F9F;
+}
+
+.kupib input::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    color: #9F9F9F;
+    padding: 0 0 0 20rem;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.kilkist {
+    display: flex;
+    align-items: center;
+}
+
+.contprise {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.con1 {
+    padding: 30rem 0 20rem 0;
+}
+
+.con2 {
+    padding-bottom: 30rem;
+}
+
+.btn-order {
+    font-size: 24rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(23, 23, 23, 1);
+    padding: 18rem;
+    border-radius: 5rem;
+    cursor: url("/img/aplecotcebtn"), pointer;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .blog {
@@ -1575,15 +1886,18 @@ iframe {
 .mem input:checked+span {
     color: #000000;
 }
-.serc{
+
+.serc {
     stroke: #F1F1F1;
     fill: transparent;
     transition: .5s;
 }
-.serc:hover{
+
+.serc:hover {
     stroke: #000000;
     fill: #000000;
 }
+
 @media screen and (min-width:426px) {
 
     .iphon,
@@ -1684,6 +1998,7 @@ iframe {
         width: 100%;
         max-width: 1140rem;
     }
+
     .vibor {
         position: static;
         width: 100%;
@@ -1691,18 +2006,21 @@ iframe {
         overflow: visible;
         padding: 0;
     }
-    .cance{
+
+    .cance {
         display: none;
     }
 
-    .cata-log{
-    grid-template-columns: repeat(3, 1fr);
-}
+    .cata-log {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     .filter {
-    display: grid;
-    grid-template-columns: 20% 80%;
-    gap: 20px;
-}
+        display: grid;
+        grid-template-columns: 20% 80%;
+        gap: 20px;
+    }
+
     .menu {
         position: static;
         width: 500rem;
@@ -1715,13 +2033,16 @@ iframe {
         background-color: white;
 
     }
-    .fil{
+
+    .fil {
         display: none;
     }
+
     .burger,
     .cancel {
         display: none;
     }
+
     .foniph,
     .fonipa {
         display: block;
@@ -1741,6 +2062,23 @@ iframe {
 }
 
 @media screen and (min-width:768px) {
+    .towbask {
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+
+    .prod {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-width: 850rem;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #F1F1F1;
+        border-radius: 8px;
+        padding: 30rem;
+    }
+
     .whyme {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -1752,7 +2090,7 @@ iframe {
         gap: 71rem;
         padding: 0 0 100rem 0;
     }
-    
+
     .menu {
         position: static;
         width: 500rem;
@@ -1777,11 +2115,13 @@ iframe {
     .aboutus img {
         width: 100%;
     }
+
     .catalog {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 20rem;
     }
+
     .produckt {
         display: grid;
         grid-template-columns: 1fr 40%;
@@ -1793,6 +2133,7 @@ iframe {
 
 
 @media screen and (min-width:1024px) {
+
     .sp {
         display: block;
     }
@@ -1926,7 +2267,8 @@ iframe {
     html {
         font-size: .8px;
     }
-    .pricemin{
+
+    .pricemin {
         display: flex;
         flex-direction: row;
     }
