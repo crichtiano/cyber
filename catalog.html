@@ -10,6 +10,59 @@
 </head>
 
 <body>
+   <div class="dark-bgc"></div>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <p class="close" id="close">x</p>
+            <div class="tabs">
+                <a href="#" class="active btn" data-reg="login">
+                    Log in
+                </a>
+                <a href="#" class="btn" data-reg="signup">
+                    Sign up
+                </a>
+            </div>
+            <div class="form login active">
+                <div class="conlog">
+                    <label class="logled">Email or phone</label>
+                    <input type="text" placeholder="Enter your email or phone">
+                </div>
+                <div class="conlog1">
+                    <label class="logled">Password</label>
+                    <input type="password" placeholder="Password">
+                </div>
+                <a class="forgot" href="#">Forgot password?</a>
+                <a class="btn-log">
+                    Log in
+                </a>
+            </div>
+            <div class="form signup">
+                <div class="consin2">
+                    <label class="know">First name</label>
+                    <input type="text" placeholder="Enter your first name">
+                </div>
+                <div class="consin">
+                    <label class="know">Last name</label>
+                    <input type="text" placeholder="Enter your last name">
+                </div>
+                <div class="consin">
+                    <label class="know">Email or phone</label>
+                    <input type="text" placeholder="Enter your email or phone">
+                </div>
+                <div class="consin">
+                    <label class="know">Password</label>
+                    <input type="password" placeholder="*********">
+                </div>
+                <div class="consin1">
+                    <label class="know">Repeat password</label>
+                    <input type="password" placeholder="*********">
+                </div>
+                <a class="btn-log">
+                    Sign up
+                </a>
+            </div>
+        </div>
+    </div>
     <header class="header">
         <div class="head wrapper">
             <div class="logo">
@@ -31,14 +84,14 @@
                         </ul>
                     </div>
                     <div class="sociall">
-                        <a class="fastmove" href="#"><img src="img/ShoppingCart.svg" alt="magazin">
+                        <a class="fastmove" href="basket.html"><img src="img/ShoppingCart.svg" alt="magazin">
                         </a>
                         <a class="fastmove" href="favourite.html"><img src="img/heard.svg" alt="like">
                         </a>
-                        <a class="fastmove" href="#"><img src="img/login.svg" alt="login">
+                        <a class="fastmove" id="open" href="#"><img class="open" src="img/login.svg" alt="login">
                         </a>
                     </div>
-                </div>
+
             </nav>
             <div class="burger">
                 <span class="br1"></span>
@@ -80,9 +133,9 @@
     <main>
         <div class="knopka wrapper">
             <a class="kn" href="#">home</a>
-            <p>/</p>
+            <p class="slash">/</p>
             <a class="kn" href="#">catalog</a>
-            <p>/</p>
+            <p class="slash">/</p>
             <a class="activ" href="#"> phones</a>
         </div>
         <div class="filter wrapper">
