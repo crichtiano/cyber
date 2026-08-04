@@ -90,12 +90,14 @@ h2 {
     padding: 0 15px;
     margin: 0rem auto;
 }
-.wrapper1{
+
+.wrapper1 {
     width: 90%;
     max-width: 850rem;
     padding: 0 15px;
     margin: 0rem auto;
 }
+
 .dark-bgc {
     display: none;
     position: fixed;
@@ -1289,6 +1291,7 @@ picture {
     background-color: #F1F1F1;
     border-radius: 8px;
     padding: 30rem;
+    position: relative;
 }
 
 .num {
@@ -1339,7 +1342,7 @@ picture {
 
 .prip {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 18rem;
     color: #9F9F9F;
 }
 
@@ -1361,9 +1364,15 @@ picture {
 
 .kilkist {
     display: flex;
+    gap: 15rem;
     align-items: center;
 }
 
+.crest{
+    position: absolute;
+    left: 88%;
+    top: 10%;
+}
 .contprise {
     display: flex;
     align-items: center;
@@ -1947,35 +1956,49 @@ iframe {
     font-size: 24rem;
     color: #171717;
     text-transform: none;
+    padding-bottom: 20rem;
 }
 
 .orderh2 {
     font-weight: 500;
     font-size: 24rem;
     color: #171717;
+    padding-bottom: 20rem;
 }
-.laborform{
-font-weight: 400;
-font-size: 18rem;
+
+.laborform {
+    font-weight: 400;
+    font-size: 18rem;
 }
-.inpord{width: 100%;
+
+.inpord {
+    width: 100%;
     height: 40px;
     border: 1px solid #9F9F9F;
     padding: 0 0 0 20rem;
     border-radius: 5px;
     box-sizing: border-box;
 }
-.dost-con{
+
+.dost-con {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 20rem;
+    align-items: center;
+    padding-bottom: 30rem;
 }
-.formname{
+.dost-con label{
+    display: flex;
+    justify-content: center;
+}
+.formname {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20rem;
+    padding-bottom: 25rem;
 }
-.dost{
+
+.dost {
     position: relative;
     display: inline-block;
 }
@@ -2006,13 +2029,97 @@ font-size: 18rem;
 .dost input:checked {
     border-color: #000000;
 }
-.dost img{
+
+.dost img {
     width: 178rem;
     height: 70rem;
 }
+
 .dost input:checked+span {
     color: #000000;
 }
+
+.metodspan input {
+    appearance: none;
+    width: 30rem;
+    height: 30rem;
+    outline: 1px solid #9F9F9F;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+}
+
+.inpmet:checked {
+    outline-color: rgb(0, 0, 0);
+    background-color: #000000;
+}
+
+.inpmet {
+    background: black;
+}
+
+.metspan {
+    font-weight: 400;
+    font-size: 18rem;
+}
+
+.textarea {
+    width: 100%;
+    height: 160rem;
+}
+
+.textarea {
+    padding: 20rem 0 0 20rem;
+    font-size: 18rem;
+    border: 1px solid #9F9F9F;
+}
+
+.btn-back {
+    font-size: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(23, 23, 23, 1);
+    padding: 22rem 0;
+    width: 270rem;
+    height: 55rem;
+    border-radius: 5rem;
+    border: 1rem solid rgba(23, 23, 23, 1);
+}
+
+.btn-comf {
+    font-size: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(23, 23, 23, 1);
+    padding: 22rem 0;
+    width: 270rem;
+    height: 55rem;
+    border-radius: 5rem;
+}
+
+.batn {
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+    padding: 40rem 0 60rem 0;
+}
+.comment{
+    padding-top: 30rem;
+}
+.kilkist
+.kitp{
+font-weight: 500;
+font-size: 14rem;
+}
+
+
+
+
+
+
+
 
 @media screen and (min-width:426px) {
 
@@ -2102,6 +2209,12 @@ font-size: 18rem;
         width: 100%;
         max-width: 1140rem;
     }
+    .dost-con {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20rem;
+    padding-bottom: 30rem;
+}
 }
 
 @media screen and (min-width:728px) {
@@ -2182,7 +2295,11 @@ font-size: 18rem;
         display: grid;
         grid-template-columns: 60% 40%;
     }
-
+    .crest{
+    position: absolute;
+    left: 93%;
+    top: 10%;
+}
     .prod {
         display: flex;
         flex-direction: row;
@@ -2396,6 +2513,11 @@ font-size: 18rem;
         display: flex;
         flex-direction: row;
     }
+    .crest{
+    position: absolute;
+    left: 95%;
+    top: 10%;
+}
 }
 
 @media screen and (min-width:1900px) {
