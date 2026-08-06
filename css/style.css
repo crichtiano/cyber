@@ -441,10 +441,10 @@ picture img .textvis {
 
 .popup {
     position: fixed;
-    left: -100%;
+    left: -110%;
     top: 50%;
     z-index: 1000;
-    width: 450px;
+    width: 450rem;
 }
 
 .popup-content {
@@ -470,8 +470,8 @@ picture img .textvis {
 
 .close {
     position: absolute;
-    right: 20%;
-    top: 0;
+    right: -20%;
+    top: -15%;
     font-size: 28px;
     align-items: center;
     text-align: center;
@@ -1102,7 +1102,7 @@ picture {
     object-fit: cover;
 }
 
-.lebfl {
+.popup .lebfl {
     display: flex;
     align-items: center;
     gap: 15rem;
@@ -1236,7 +1236,7 @@ picture {
     max-height: 580rem;
     width: 100%;
     max-width: 490rem;
-    padding: 35rem 40rem;
+    padding: 50rem;
     border-radius: 10px;
     border: 1px solid #333;
     flex-direction: column;
@@ -1280,6 +1280,7 @@ picture {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    align-items: center;
 }
 
 .prod {
@@ -1304,18 +1305,23 @@ picture {
 
 .plu,
 .min {
+    display: flex;
     color: #9F9F9F;
     width: 26rem;
     height: 20rem;
     background-color: transparent;
     border: 1px solid #9F9F9F;
     border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .kupih1 {
     font-weight: 500;
     font-size: 28rem;
     color: #171717;
+    text-transform: none;
 }
 
 .promo {
@@ -1348,8 +1354,9 @@ picture {
 
 .kupib input {
     outline: none;
-    width: 100%;
-    height: 50rem;
+    width: 92%;
+    padding: 20rem;
+    border-radius: 5px;
     border: 1px solid #9F9F9F;
 }
 
@@ -1357,7 +1364,6 @@ picture {
     font-weight: 400;
     font-size: 18px;
     color: #9F9F9F;
-    padding: 0 0 0 20rem;
     align-items: center;
     border-radius: 5px;
 }
@@ -1368,11 +1374,12 @@ picture {
     align-items: center;
 }
 
-.crest{
+.crest {
     position: absolute;
     left: 88%;
     top: 10%;
 }
+
 .contprise {
     display: flex;
     align-items: center;
@@ -1399,6 +1406,13 @@ picture {
     cursor: url("/img/aplecotcebtn"), pointer;
     width: 100%;
     box-sizing: border-box;
+    transition: .5s;
+}
+
+.btn-order:hover {
+    background-color: #F1F1F1;
+    color: #171717;
+    border: 1rem solid #171717;
 }
 
 .blog {
@@ -1772,7 +1786,7 @@ iframe {
 }
 
 .orange {
-    background: rgba(224, 148, 27, 1);
+    background: #E0941B;
 }
 
 .blak {
@@ -1975,7 +1989,7 @@ iframe {
     width: 100%;
     height: 40px;
     border: 1px solid #9F9F9F;
-    padding: 0 0 0 20rem;
+    padding: 0 20rem 0 20rem;
     border-radius: 5px;
     box-sizing: border-box;
 }
@@ -1987,13 +2001,15 @@ iframe {
     align-items: center;
     padding-bottom: 30rem;
 }
-.dost-con label{
+
+.dost-con label {
     display: flex;
     justify-content: center;
 }
+
 .formname {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 20rem;
     padding-bottom: 25rem;
 }
@@ -2001,13 +2017,14 @@ iframe {
 .dost {
     position: relative;
     display: inline-block;
+    width: 100%;
 }
 
 .dost input {
     margin: 0;
     appearance: none;
     outline: none;
-    width: 270rem;
+    width: 100%;
     height: 100rem;
     box-sizing: border-box;
     border-radius: 8px;
@@ -2063,14 +2080,21 @@ iframe {
 }
 
 .textarea {
-    width: 100%;
+    width: 94%;
     height: 160rem;
-}
-
-.textarea {
-    padding: 20rem 0 0 20rem;
+    padding: 20rem 20rem;
     font-size: 18rem;
     border: 1px solid #9F9F9F;
+}
+
+.conforn {
+    position: relative;
+}
+
+.svgforn {
+    position: absolute;
+    left: 90%;
+    top: 56%;
 }
 
 .btn-back {
@@ -2105,17 +2129,52 @@ iframe {
     gap: 20rem;
     padding: 40rem 0 60rem 0;
 }
-.comment{
+
+.comment {
     padding-top: 30rem;
 }
-.kilkist
-.kitp{
-font-weight: 500;
-font-size: 14rem;
+
+.kilkist .kitp {
+    font-weight: 500;
+    font-size: 14rem;
 }
 
+.method label {
+    display: flex;
+    justify-content: center;
+}
 
+.method {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
 
+.metodspa {
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding: 20rem 20rem;
+    cursor: pointer;
+}
+
+.inpmet {
+    width: 18px;
+    height: 18px;
+    background-color: #171717;
+}
+
+.metspan {
+    padding: 0 0 0 10rem;
+    font-size: 18rem;
+}
+
+.metodspa:checked {
+    border: 1px solid #171717;
+}
 
 
 
@@ -2161,6 +2220,12 @@ font-size: 14rem;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
 
+    }
+
+    .close {
+        position: absolute;
+        right: -45%;
+        top: 0;
     }
 
     .categ {
@@ -2209,12 +2274,27 @@ font-size: 14rem;
         width: 100%;
         max-width: 1140rem;
     }
+
     .dost-con {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20rem;
-    padding-bottom: 30rem;
-}
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20rem;
+        padding-bottom: 30rem;
+    }
+
+    .formname {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20rem;
+        padding-bottom: 25rem;
+    }
+
+    .method {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
 }
 
 @media screen and (min-width:728px) {
@@ -2288,18 +2368,7 @@ font-size: 14rem;
         width: 100%;
         max-width: 500rem;
     }
-}
 
-@media screen and (min-width:768px) {
-    .towbask {
-        display: grid;
-        grid-template-columns: 60% 40%;
-    }
-    .crest{
-    position: absolute;
-    left: 93%;
-    top: 10%;
-}
     .prod {
         display: flex;
         flex-direction: row;
@@ -2310,6 +2379,19 @@ font-size: 14rem;
         background-color: #F1F1F1;
         border-radius: 8px;
         padding: 30rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .towbask {
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+
+    .crest {
+        position: absolute;
+        left: 93%;
+        top: 10%;
     }
 
     .whyme {
@@ -2372,7 +2454,7 @@ font-size: 14rem;
     }
 
     .close {
-        right: -5%;
+        right: -30%;
     }
 
     .name {
@@ -2506,18 +2588,19 @@ font-size: 14rem;
     }
 
     .close {
-        right: -15%;
+        right: -25%;
     }
 
     .pricemin {
         display: flex;
         flex-direction: row;
     }
-    .crest{
-    position: absolute;
-    left: 95%;
-    top: 10%;
-}
+
+    .crest {
+        position: absolute;
+        left: 95%;
+        top: 10%;
+    }
 }
 
 @media screen and (min-width:1900px) {

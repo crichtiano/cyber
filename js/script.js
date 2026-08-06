@@ -21,7 +21,7 @@ function cancelBurger() {
     if (black) {
         black.style.display = "none"
     }
-    popup.style.left = "-100%";
+    popup.style.left = "-110%";
 
 }
 
