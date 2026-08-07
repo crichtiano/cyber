@@ -68,3 +68,39 @@ btn.forEach(activbtn => {
         })
     }
 });
+const colors = document.querySelectorAll('.inpcol');
+
+const kam = document.querySelector('.kam img');
+const ekr = document.querySelector('.ekr img');
+const hedpr = document.querySelector('.hedpr img');
+
+colors.forEach(color => {
+    color.addEventListener('change', function () {
+        if (this.value === 'blue') {
+            kam.src = 'img/prodkam.png';
+            ekr.src = 'img/prodek.png';
+            hedpr.src = 'img/prodhed.png';
+        }
+        if (this.value === 'orange') {
+            kam.src = 'img/orangeiph2.jpg';
+            ekr.src = 'img/orangeipn.jpg';
+            hedpr.src = 'img/orangeiph3.png';
+        }
+        if (this.value === 'black') {
+            kam.src = 'img/blackiph.jpg';
+            ekr.src = 'img/prodek.png';
+            hedpr.src = 'img/blackiph2.jpg';
+        }
+        if (this.value === 'white') {
+            kam.src = 'img/witeiph.jpg';
+            ekr.src = 'img/witeiph2.jpg';
+            hedpr.src = 'img/witeiph3.png';
+        }
+        if (this.value === 'pink') {
+            kam.src = 'img/pinkiph3.jpg';
+            ekr.src = 'img/pinkiph2.jpg';
+            hedpr.src = 'img/pinkiph.jpg';
+        }
+
+    });
+});

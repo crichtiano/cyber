@@ -1405,6 +1405,7 @@ picture {
     border-radius: 5rem;
     cursor: url("/img/aplecotcebtn"), pointer;
     width: 100%;
+     border: 1px solid transparent;
     box-sizing: border-box;
     transition: .5s;
 }
@@ -1685,7 +1686,7 @@ iframe {
     object-fit: cover;
     border-radius: 8px;
 }
-
+.btn-order
 .hedpr img {
     background-color: rgba(241, 241, 241, 1);
     width: 100%;
