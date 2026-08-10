@@ -82,24 +82,24 @@ colors.forEach(color => {
             hedpr.src = 'img/prodhed.png';
         }
         if (this.value === 'orange') {
-            kam.src = 'img/orangeiph2.jpg';
-            ekr.src = 'img/orangeipn.jpg';
+            kam.src = 'img/orangeiph2.png';
+            ekr.src = 'img/orangeipn.png';
             hedpr.src = 'img/orangeiph3.png';
         }
         if (this.value === 'black') {
-            kam.src = 'img/blackiph.jpg';
+            kam.src = 'img/blackiph.png';
             ekr.src = 'img/prodek.png';
-            hedpr.src = 'img/blackiph2.jpg';
+            hedpr.src = 'img/blackiph2.png';
         }
         if (this.value === 'white') {
-            kam.src = 'img/witeiph.jpg';
-            ekr.src = 'img/witeiph2.jpg';
+            kam.src = 'img/witeiph.png';
+            ekr.src = 'img/witeiph2.png';
             hedpr.src = 'img/witeiph3.png';
         }
         if (this.value === 'pink') {
-            kam.src = 'img/pinkiph3.jpg';
-            ekr.src = 'img/pinkiph2.jpg';
-            hedpr.src = 'img/pinkiph.jpg';
+            kam.src = 'img/pinkiph3.png';
+            ekr.src = 'img/pinkiph2.png';
+            hedpr.src = 'img/pinkiph.png';
         }
 
     });
