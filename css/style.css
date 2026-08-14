@@ -453,6 +453,7 @@ picture img .textvis {
     width: 100%;
     max-width: 515rem;
     padding: 25px;
+    box-sizing: border-box;
 }
 
 .conlog {
@@ -1227,6 +1228,7 @@ picture {
 .conkupib {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .kupib {
@@ -1235,7 +1237,6 @@ picture {
     height: 100%;
     max-height: 580rem;
     width: 100%;
-    max-width: 490rem;
     padding: 50rem;
     border-radius: 10px;
     border: 1px solid #333;
@@ -1307,14 +1308,21 @@ picture {
 .min {
     display: flex;
     color: #9F9F9F;
-    width: 26rem;
-    height: 20rem;
+    width: 30rem;
+    height: 24rem;
     background-color: transparent;
     border: 1px solid #9F9F9F;
     border-radius: 3px;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: .5s;
+}
+
+.plu:hover,
+.min:hover {
+    transform: scale(1.2);
+    border: 1px solid #171717;
 }
 
 .kupih1 {
@@ -1374,10 +1382,15 @@ picture {
     align-items: center;
 }
 
-.crest {
+.metodspa .crest {
     position: absolute;
     left: 88%;
     top: 10%;
+    transition: .5s;
+}
+
+.crest:hover {
+    transform: rotate(180deg) scale(1.2);
 }
 
 .contprise {
@@ -1405,7 +1418,7 @@ picture {
     border-radius: 5rem;
     cursor: url("/img/aplecotcebtn"), pointer;
     width: 100%;
-     border: 1px solid transparent;
+    border: 1px solid transparent;
     box-sizing: border-box;
     transition: .5s;
 }
@@ -1424,8 +1437,8 @@ picture {
     width: 100%;
     max-width: 1140rem;
 }
-.photku
-.blog h2 {
+
+.photku .blog h2 {
     font-size: 24rem;
     font-weight: 500;
     padding: 0 0 10rem 0;
@@ -1457,8 +1470,7 @@ picture {
     align-items: center;
 }
 
-
-.textblog {
+.conkupib .textblog {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -1632,8 +1644,7 @@ iframe {
 }
 
 
-
-.infocon {
+.inpord .infocon {
     display: grid;
     grid-template-columns: 1fr;
     gap: 40rem;
@@ -1687,13 +1698,16 @@ iframe {
     object-fit: cover;
     border-radius: 8px;
 }
-.conkam{
+
+.conkam {
     width: 100%;
 }
+
 .kam,
-.ekr{
+.ekr {
     width: 100%;
 }
+
 .hedpr img {
     background-color: rgba(241, 241, 241, 1);
     width: 100%;
@@ -1994,12 +2008,14 @@ iframe {
 }
 
 .inpord {
+    appearance: none;
     width: 100%;
     height: 40px;
     border: 1px solid #9F9F9F;
     padding: 0 20rem 0 20rem;
     border-radius: 5px;
     box-sizing: border-box;
+    color: #9F9F9F;
 }
 
 .dost-con {
@@ -2073,13 +2089,17 @@ iframe {
     border: 2px solid #ffffff;
 }
 
-.inpmet:checked {
-    outline-color: rgb(0, 0, 0);
-    background-color: #000000;
+.inpmet {
+    appearance: none;
+    outline: #9F9F9F;
+    border-radius: 50%;
+    border: 1px solid #9F9F9F;
 }
 
-.inpmet {
-    background: black;
+.inpmet:checked {
+    border: 3px solid #ffffff;
+    background: #171717;
+    outline: 1px solid #171717;
 }
 
 .metspan {
@@ -2088,11 +2108,14 @@ iframe {
 }
 
 .textarea {
-    width: 94%;
+    width: 91%;
     height: 160rem;
     padding: 20rem 20rem;
     font-size: 18rem;
+    border-radius: 5px;
     border: 1px solid #9F9F9F;
+    font-family: "Fixel Display", sans-serif;
+    resize: none;
 }
 
 .conforn {
@@ -2103,6 +2126,7 @@ iframe {
     position: absolute;
     left: 90%;
     top: 56%;
+    pointer-events: none;
 }
 
 .btn-back {
@@ -2112,7 +2136,7 @@ iframe {
     align-items: center;
     color: rgba(23, 23, 23, 1);
     padding: 22rem 0;
-    width: 270rem;
+    width: 245rem;
     height: 55rem;
     border-radius: 5rem;
     border: 1rem solid rgba(23, 23, 23, 1);
@@ -2126,7 +2150,7 @@ iframe {
     color: rgba(255, 255, 255, 1);
     background: rgba(23, 23, 23, 1);
     padding: 22rem 0;
-    width: 270rem;
+    width: 245rem;
     height: 55rem;
     border-radius: 5rem;
 }
@@ -2172,7 +2196,6 @@ iframe {
 .inpmet {
     width: 18px;
     height: 18px;
-    background-color: #171717;
 }
 
 .metspan {
@@ -2180,7 +2203,7 @@ iframe {
     font-size: 18rem;
 }
 
-.metodspa:checked {
+.metodspa:has(input:checked) {
     border: 1px solid #171717;
 }
 
@@ -2302,6 +2325,15 @@ iframe {
         align-items: center;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
+    }
+
+    .btn-comf,
+    .btn-back {
+        width: 270rem;
+    }
+
+    .textarea {
+        width: 94%;
     }
 }
 
@@ -2608,6 +2640,11 @@ iframe {
         position: absolute;
         left: 95%;
         top: 10%;
+    }
+
+    .svgforn {
+        left: 92%;
+        top: 65%;
     }
 }
 
