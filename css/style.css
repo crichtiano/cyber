@@ -1381,7 +1381,11 @@ picture {
     gap: 15rem;
     align-items: center;
 }
-
+.crestt{
+    position: absolute;
+    left: 90%;
+    top: 10%;
+}
 .metodspa .crest {
     position: absolute;
     left: 88%;
@@ -2144,8 +2148,13 @@ iframe {
     height: 55rem;
     border-radius: 5rem;
     border: 1rem solid rgba(23, 23, 23, 1);
+    transition: .5s;
 }
-
+.btn-back:hover{
+    background: #171717;
+    color: #FFFFFF;
+}
+.crest
 .btn-comf {
     font-size: 30rem;
     display: flex;
@@ -2153,12 +2162,18 @@ iframe {
     align-items: center;
     color: rgba(255, 255, 255, 1);
     background: rgba(23, 23, 23, 1);
+    border: 1px solid transparent;
     padding: 22rem 0;
     width: 245rem;
     height: 55rem;
     border-radius: 5rem;
+    transition: .5s;
 }
-
+.btn-comf:hover{
+    background: #ffffff;
+    color: #171717;
+    border: 1px solid #171717;
+}
 .batn {
     display: flex;
     justify-content: center;
@@ -2222,7 +2237,17 @@ iframe {
         display: block;
 
     }
-
+    .prod{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-width: 850rem;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #F1F1F1;
+        border-radius: 8px;
+        padding: 30rem;
+    }
     .iphon17top {
         width: 50vw;
     }
@@ -2259,7 +2284,6 @@ iframe {
 
     .close {
         position: absolute;
-        right: -45%;
         top: 0;
     }
 
@@ -2497,10 +2521,6 @@ iframe {
         display: block;
     }
 
-    .close {
-        right: -30%;
-    }
-
     .name {
         height: 90vh;
     }
@@ -2631,10 +2651,6 @@ iframe {
         font-size: .8px;
     }
 
-    .close {
-        right: -25%;
-    }
-
     .pricemin {
         display: flex;
         flex-direction: row;
@@ -2660,10 +2676,6 @@ iframe {
     .iphon17top,
     .sp {
         width: 800rem;
-    }
-
-    .close {
-        right: -25%;
     }
 
     .li svg {
