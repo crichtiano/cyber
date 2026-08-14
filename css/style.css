@@ -472,7 +472,7 @@ picture img .textvis {
 .close {
     position: absolute;
     right: -20%;
-    top: -15%;
+    top: 0%;
     font-size: 28px;
     align-items: center;
     text-align: center;
@@ -1459,7 +1459,7 @@ picture {
 .textblog img {
     padding: 0 0 20rem;
 }
-
+.close
 .textblog a {
     font-size: 20rem;
     color: rgba(159, 159, 159, 1);
