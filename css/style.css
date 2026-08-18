@@ -39,7 +39,7 @@
 }
 
 html {
-    font-size: 0.5px;
+    font-size: 0.8px;
 }
 
 * {
@@ -97,7 +97,7 @@ h2 {
     padding: 0 15px;
     margin: 0rem auto;
 }
-
+.popup
 .dark-bgc {
     display: none;
     position: fixed;
@@ -228,7 +228,6 @@ a {
 .main-catalog {
     display: flex;
     align-items: center;
-    justify-content: center;
     height: 60rem;
     color: rgba(255, 255, 255, 1);
     background-color: #2D2D2D;
@@ -441,7 +440,7 @@ picture img .textvis {
 
 .popup {
     position: fixed;
-    left: -110%;
+    left: -140%;
     top: 50%;
     z-index: 1000;
     width: 450rem;
