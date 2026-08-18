@@ -1334,7 +1334,7 @@ picture {
 
 .promo {
     font-weight: 400;
-    font-size: 18rem;
+    font-size: 22rem;
     color: #171717;
     padding-bottom: 10rem;
 }
@@ -1348,7 +1348,7 @@ picture {
     font-weight: 600;
     font-size: 26rem;
 }
-
+.prod
 .pripcin {
     font-weight: 500;
     font-size: 24rem;
@@ -1356,7 +1356,7 @@ picture {
 
 .prip {
     font-weight: 400;
-    font-size: 18rem;
+    font-size: 20rem;
     color: #9F9F9F;
 }
 
@@ -1383,8 +1383,8 @@ picture {
 }
 .crestt{
     position: absolute;
-    left: 90%;
-    top: 10%;
+    right: 20px;
+    top: 20px;
 }
 .metodspa .crest {
     position: absolute;
@@ -2162,9 +2162,8 @@ iframe {
     color: rgba(255, 255, 255, 1);
     background: rgba(23, 23, 23, 1);
     border: 1px solid transparent;
-    padding: 22rem 0;
+    padding: 31rem 0;
     width: 245rem;
-    height: 55rem;
     border-radius: 5rem;
     transition: .5s;
 }
@@ -2240,7 +2239,6 @@ iframe {
         display: flex;
         flex-direction: row;
         width: 100%;
-        max-width: 850rem;
         align-items: center;
         justify-content: space-between;
         background-color: #F1F1F1;

@@ -23,45 +23,45 @@
                     Sign up
                 </a>
             </div>
-            <div class="form login active">
+            <form method="post" action="singin.php" class="form login active">
                 <div class="conlog">
                     <label class="logled">Email or phone</label>
-                    <input type="text" placeholder="Enter your email or phone">
+                    <input name="emaorpho" type="text" placeholder="Enter your email or phone">
                 </div>
                 <div class="conlog1">
                     <label class="logled">Password</label>
-                    <input type="password" placeholder="Password">
+                    <input name="passwords" type="password" placeholder="Password">
                 </div>
                 <a class="forgot" href="#">Forgot password?</a>
-                <a class="btn-log">
+                <button type="submit" class="btn-log">
                     Log in
-                </a>
-            </div>
-            <div class="form signup">
+                </button>
+            </form>
+            <form method="post" action="singup.php" class="form signup">
                 <div class="consin2">
                     <label class="know">First name</label>
-                    <input type="text" placeholder="Enter your first name">
+                    <input name="firstname" type="text" placeholder="Enter your first name">
                 </div>
                 <div class="consin">
                     <label class="know">Last name</label>
-                    <input type="text" placeholder="Enter your last name">
+                    <input name="lastname" type="text" placeholder="Enter your last name">
                 </div>
                 <div class="consin">
                     <label class="know">Email or phone</label>
-                    <input type="text" placeholder="Enter your email or phone">
+                    <input name="emorph" type="text" placeholder="Enter your email or phone">
                 </div>
                 <div class="consin">
                     <label class="know">Password</label>
-                    <input type="password" placeholder="*********">
+                    <input name="password" type="password" placeholder="*********">
                 </div>
                 <div class="consin1">
                     <label class="know">Repeat password</label>
-                    <input type="password" placeholder="*********">
+                    <input name="reppasword" type="password" placeholder="*********">
                 </div>
-                <a class="btn-log">
+                <button type="submit" class="btn-log">
                     Sign up
-                </a>
-            </div>
+                </button>
+            </form>
         </div>
     </div>
     <header class="header">
