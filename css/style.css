@@ -2224,11 +2224,38 @@ iframe {
 .metodspa:has(input:checked) {
     border: 1px solid #171717;
 }
-
-
-
-
-
+.h1thank{
+    align-items: center;
+    font-size: 70rem;
+    text-transform: uppercase;
+    color: #171717;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.pthx{
+    align-items: center;
+    font-size: 30rem;
+    color: #171717;
+    font-weight: 200;
+    padding-bottom: 20px;
+}
+.conthan{
+    display: flex;
+    justify-content: center;
+}
+.btnthank{
+    padding-bottom: 50rem;
+}
+.mainthank{
+    height: 50vh;
+}
+.con-thx{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
 @media screen and (min-width:426px) {
 
     .iphon,

@@ -143,19 +143,19 @@
             <div class="formname">
                 <div>
                     <label class="laborform">First name*</label>
-                    <input name="firstname" class="inpord" type="text" placeholder="Enter your first name">
+                    <input name="firstname" class="inpord" required type="text" placeholder="Enter your first name">
                 </div>
                 <div>
                     <label class="laborform">Last name*</label>
-                    <input name="lastname" class="inpord" type="text" placeholder="Enter your last name">
+                    <input name="lastname" class="inpord" required type="text" placeholder="Enter your last name">
                 </div>
                 <div>
                     <label class="laborform">Phone number*</label>
-                    <input name="number" class="inpnum inpord" type="tel" min="1" placeholder="Enter your phone number">
+                    <input name="number" class="inpnum inpord" required type="tel" min="1" placeholder="Enter your phone number">
                 </div>
                 <div>
                     <label class="laborform">E-mail</label>
-                    <input name="email" class="inpord" type="email" placeholder="Enter your email">
+                    <input name="email" class="inpord" type="email" required placeholder="Enter your email">
                 </div>
             </div>
             <div>
@@ -163,20 +163,20 @@
                 <div class="dost-con">
                     <label>
                         <span class="dost">
-                            <input type="radio" name="memory" value="ukrpost">
+                            <input type="radio" required name="memory" value="ukrpost">
                             <span><img src="img/ukrpost.svg" alt="ukrpost"></span>
                         </span>
                     </label>
                     <label>
                         <span class="dost">
-                            <input type="radio" name="memory" value="novaposr">
+                            <input type="radio" required name="memory" value="novaposr">
                             <span><img src="img/novaimg.svg" alt="nova post">
                             </span>
                         </span>
                     </label>
                     <label>
                         <span class="dost">
-                            <input type="radio" name="memory" value="coorer">
+                            <input type="radio" required name="memory" value="coorer">
                             <span><img src="img/coorer.svg" alt="coorier"></span>
                         </span>
                     </label>
@@ -187,8 +187,8 @@
                         <a href="#"><svg class="svgforn" width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 1L6.50002 6L12 1" stroke="#9F9F9F" stroke-width="2" stroke-linecap="round" />
                         </svg></a>
-                        <select class="inpord" name="Country" id="">
-                            <option selected disabled class="select">Select your country</option>
+                        <select class="inpord" name="Country" required id="">
+                            <option selected disabled value="" class="select">Select your country</option>
                             <option value="Ukraine">Ukraine</option>
                             <option value="Spain">Spain</option>
                             <option value="German">German</option>
@@ -200,8 +200,8 @@
                         <a href="#"><svg class="svgforn" width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 1L6.50002 6L12 1" stroke="#9F9F9F" stroke-width="2" stroke-linecap="round" />
                         </svg></a>
-                        <select class="inpord" name="siti" id="">
-                            <option selected disabled class="select">Select your state</option>
+                        <select class="inpord" name="siti" required id="">
+                            <option selected disabled value="" class="select">Select your state</option>
                             <option value="khmel">khmelnutski</option>
                             <option value="kiyv">kuiv</option>
                             <option value="ternopil">ternopil</option>
@@ -213,8 +213,8 @@
                         <a href="#"><svg class="svgforn" width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 1L6.50002 6L12 1" stroke="#9F9F9F" stroke-width="2" stroke-linecap="round" />
                         </svg></a>
-                        <select class="inpord" name="sitvil" id="">
-                            <option selected disabled class="select">Select your city/village</option>
+                        <select class="inpord" name="sitvil" required id="">
+                            <option selected disabled value="" class="select">Select your city/village</option>
                             <option value="khmel">khmelnutski</option>
                             <option value="kiyv">kuiv</option>
                             <option value="ternopil">ternopil</option>
@@ -226,7 +226,7 @@
                         <a href="#"><svg class="svgforn" width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 1L6.50002 6L12 1" stroke="#9F9F9F" stroke-width="2" stroke-linecap="round" />
                         </svg></a>
-                        <select class="inpord" name="postnum" id="">
+                        <select class="inpord" name="postnum" required id="">
                             <option selected disabled value="" class="select">Select post office number</option>
                             <option value="29007">29007</option>
                             <option value="22000">22000</option>
@@ -241,19 +241,19 @@
                 <div class="method">
                     <label>
                         <span class="metodspa">
-                            <input class="inpmet" type="radio" name="method" value="Banktransfer" checked>
+                            <input class="inpmet" required type="radio" name="method" value="Banktransfer">
                             <span class="metspan">Bank transfer</span>
                         </span>
                     </label>
                     <label>
                         <span class="metodspa">
-                            <input class="inpmet" type="radio" name="method" value="Cashondeliver">
+                            <input class="inpmet" required type="radio" name="method" value="Cashondeliver">
                             <span class="metspan">Cash on delivery</span>
                         </span>
                     </label>
                     <label>
                         <span class="metodspa">
-                            <input class="inpmet" type="radio" name="method" value="LigPay">
+                            <input class="inpmet" required type="radio" name="method" value="LigPay">
                             <span class="metspan">LigPay</span>
                         </span>
                     </label>
