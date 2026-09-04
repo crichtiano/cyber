@@ -97,7 +97,7 @@ h2 {
     padding: 0 15px;
     margin: 0rem auto;
 }
-.popup
+
 .dark-bgc {
     display: none;
     position: fixed;
@@ -385,8 +385,7 @@ picture img .textvis {
 .imagemac {
     width: 100%;
     max-width: 300rem;
-
-
+    display: none;
 }
 
 .textmac {
@@ -643,14 +642,47 @@ picture {
     height: 100%;
     object-fit: cover;
 }
+.popup-overlay {
+display: none;
+position: fixed;
+inset: 0;
+z-index: 30;
+background: rgba(0, 0, 0, 0.85);
+justify-content: center;
+align-items: center;
+}
+.popup-overlay.active {
+display: flex;
+}
 
+.popup-content {
+position: relative;
+max-height: 85%;
+}
+
+.popup-content img {
+max-width: 100%;
+max-height: 85vh;
+border-radius: 8px;
+display: block;
+}
+
+.popup-close {
+position: absolute;
+top: -40px;
+right: 0;
+color: #fff;
+font-size: 36px;
+font-weight: bold;
+cursor: pointer;
+}
 .product {
     padding: 0 15rem;
 }
 
 .catalog {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 20rem;
     padding: 0 15rem 70rem;
 }
@@ -664,9 +696,14 @@ picture {
 
 
 figure h2 {
-    padding: 0 30rem 0 25rem;
     font-weight: 500;
     font-size: 24rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .hurd {
@@ -936,8 +973,8 @@ figure h2 {
     width: 100%;
     box-sizing: border-box;
 }
-.kam
-.flax-between {
+
+.kam .flax-between {
     display: flex;
     justify-content: space-between;
 }
@@ -1261,8 +1298,8 @@ picture {
     font-size: 14rem;
     color: #9F9F9F;
 }
-.kupib
-.pbask2 {
+
+.kupib .pbask2 {
     padding-bottom: 15rem;
 }
 
@@ -1347,6 +1384,7 @@ picture {
     font-weight: 600;
     font-size: 26rem;
 }
+
 .prod,
 .pripcin {
     font-weight: 500;
@@ -1380,11 +1418,13 @@ picture {
     gap: 15rem;
     align-items: center;
 }
-.crestt{
+
+.crestt {
     position: absolute;
     right: 20px;
     top: 20px;
 }
+
 .metodspa .crest {
     position: absolute;
     left: 88%;
@@ -1401,8 +1441,8 @@ picture {
     align-items: center;
     justify-content: space-between;
 }
-.kitp
-.con1 {
+
+.kitp .con1 {
     padding: 30rem 0 20rem 0;
 }
 
@@ -1462,8 +1502,8 @@ picture {
 .textblog img {
     padding: 0 0 20rem;
 }
-.close
-.textblog a {
+
+.close .textblog a {
     font-size: 20rem;
     color: rgba(159, 159, 159, 1);
     padding: 0 10rem 0 0;
@@ -2149,10 +2189,12 @@ iframe {
     border: 1rem solid rgba(23, 23, 23, 1);
     transition: .5s;
 }
-.btn-back:hover{
+
+.btn-back:hover {
     background: #171717;
     color: #FFFFFF;
 }
+
 .btn-comf {
     font-size: 30rem;
     display: flex;
@@ -2166,11 +2208,13 @@ iframe {
     border-radius: 5rem;
     transition: .5s;
 }
-.btn-comf:hover{
+
+.btn-comf:hover {
     background: #ffffff;
     color: #171717;
     border: 1px solid #171717;
 }
+
 .batn {
     display: flex;
     justify-content: center;
@@ -2186,9 +2230,11 @@ iframe {
     font-weight: 500;
     font-size: 20rem;
 }
-.con1{
+
+.con1 {
     padding: 30rem 0 20rem;
 }
+
 .method label {
     display: flex;
     justify-content: center;
@@ -2224,7 +2270,8 @@ iframe {
 .metodspa:has(input:checked) {
     border: 1px solid #171717;
 }
-.h1thank{
+
+.h1thank {
     align-items: center;
     font-size: 70rem;
     text-transform: uppercase;
@@ -2232,30 +2279,36 @@ iframe {
     font-weight: 500;
     padding-bottom: 20px;
 }
-.pthx{
+
+.pthx {
     align-items: center;
     font-size: 30rem;
     color: #171717;
     font-weight: 200;
     padding-bottom: 20px;
 }
-.conthan{
+
+.dark-bgc .conthan {
     display: flex;
     justify-content: center;
 }
-.btnthank{
+
+.btnthank {
     padding-bottom: 50rem;
 }
-.mainthank{
+
+.mainthank {
     height: 50vh;
 }
-.con-thx{
+
+.con-thx {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     height: 100%;
 }
+
 @media screen and (min-width:426px) {
 
     .iphon,
@@ -2263,7 +2316,10 @@ iframe {
         display: block;
 
     }
-    .prod{
+    .imagemac{
+        display: block;
+    }
+    .prod {
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -2273,6 +2329,7 @@ iframe {
         border-radius: 8px;
         padding: 30rem;
     }
+
     .iphon17top {
         width: 50vw;
     }

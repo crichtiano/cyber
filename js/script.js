@@ -104,3 +104,20 @@ colors.forEach(color => {
 
     });
 });
+const overlay = document.getElementById('popupOverlay');
+const popupImg = document.getElementById('popupImg');
+
+document.addEventListener('click', (e) => {
+if (e.target.closest('.catalog picture img,.cata-log picture img')) {
+e.preventDefault();
+overlay.classList.add('active');
+popupImg.src = e.target.src;
+}
+if (e.target === overlay || e.target.id === 'popupClose') {
+overlay.classList.remove('active');
+}
+});
+
+document.addEventListener('keydown', (e) => {
+if (e.key === 'Escape') overlay.classList.remove('active');
+});
